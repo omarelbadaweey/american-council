@@ -1,0 +1,238 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "برنامج سوق العمل",
+      "description": "برنامج متكامل لإعداد الخريجين لسوق العمل",
+      "duration": "3 إلى 4 شهور",
+      "price":  "1800",
+      "content": ["English (3 levels)", "ICDL", "Digital marketing", "Management skills", "personal skills", "AI"],
+      "image": "/img/markting.jpg"
+    },
+    {
+      "id": 2,
+      "title": "برنامج اللغة الإنجليزية",
+      "description": "تعلم اللغة الإنجليزية من البداية للإحتراف",
+      "duration": "3 إلى 4 شهور", 
+      "price":  "2500",
+      "content": ["writing", "Reading", "listening", "speaking", "(A1,A2/B1,B2/C1,C2)"],
+      "image": "/img/english.jpg"
+    },
+    {
+      "id": 3, 
+      "title": "TOEFL Preparation",
+      "description": "تحضير لامتحان التوفل",
+      "duration": "3 إلى 4 شهور",
+      "price":  "1900", 
+      "content": ["writing", "Reading", "listening", "speaking"],
+      "image": "/img/tofel.jpg"
+    },
+    {
+      "id": 4,
+      "title": "برنامج اللغة الألمانية", 
+      "description": "تعلم اللغة الألمانية بجميع مستوياتها",
+      "duration": "3 إلى 4 شهور",
+      "price":  "1500",
+      "content": ["writing", "Reading", "listening", "speaking", "(A1,A2/B1,B2/C1,C2)"],
+      "image": "/img/germany.jpg"
+    },
+    {
+      "id": 5,
+      "title": "برنامج اللغة الإيطالية",
+      "description": "تعلم اللغة الإيطالية بجميع مستوياتها", 
+      "duration": "3 إلى 4 شهور",
+      "price":  "5000",
+      "content": ["writing", "Reading", "listening", "speaking", "(A1,A2/B1,B2/C1,C2)"],
+      "image": "/img/italiano.jpg"
+    },
+    {
+      "id": 6,
+      "title": "برنامج اللغة الفرنسية",
+      "description": "تعلم اللغة الفرنسية بجميع مستوياتها",
+      "duration": "3 إلى 4 شهور",
+      "price":  "3000", 
+      "content": ["writing", "Reading", "listening", "speaking", "(A1,A2/B1,B2/C1,C2)"],
+      "image": "/img/french.jpg"
+    },
+    {
+      "id": 7,
+      "title": "برنامج اللغة الإسبانية",
+      "description": "تعلم اللغة الإسبانية بجميع مستوياتها",
+      "duration": "3 إلى 4 شهور",
+      "price":  "2000",
+      "content": ["writing", "Reading", "listening", "speaking", "(A1,A2/B1,B2/C1,C2)"], 
+      "image": "/img/spanish.jpg"
+    },
+    {
+      "id": 8,
+      "title": "إعداد محاضر لغات أجنبية",
+      "description": "إعداد محاضرين متخصصين في اللغات الأجنبية",
+      "duration": "3 إلى 4 شهور",
+      "price":  "1300",
+      "content": ["English", "French", "Italian", "German", "Russian", "Chinese"],
+      "image": "/img/languages.jpg"
+    },
+    {
+      "id": 9, 
+      "title": "Front-End Development",
+      "description": "تعلم تطوير الواجهات الأمامية",
+      "duration": "3 إلى 4 شهور",
+      "price":  "1200",
+      "content": ["Photoshop for web", "HTML 5", "CSS", "Bootstrap", "jQuery", "JavaScript", "React"],
+      "image": "/img/front.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Back-End Development", 
+      "description": "تعلم تطوير الواجهات الخلفية",
+      "duration": "3 إلى 4 شهور",
+      "price":  "1400",
+      "content": ["PHP7 OOP", "MySQL", "MVC", "Laravel", "API", "WordPress"],
+      "image": "/img/back.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Dollars Program",
+      "description": "برنامج متكامل للتكنولوجيا",
+      "duration": "6 شهور", 
+      "price":  "2200",
+      "content": ["Front end", "Back end", "Cyber security", "UI/UX", "Digital marketing"],
+      "image": "/img/dollars.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Graphic Design",
+      "description": "تعلم تصميم الجرافيك",
+      "duration": "3 إلى 4 شهور",
+      "price":  "3100",
+      "content": ["Photoshop", "InDesign", "Illustrator"],
+      "image": "/img/graphic.jpg" 
+    },
+    {
+      "id": 13,
+      "title": "التطبيقات التكنولوجيا في التغذية",
+      "description": "تطبيقات تكنولوجيا معالجة الأغذية",
+      "duration": "3 إلى 4 شهور",
+      "price":  "4000",
+      "content": ["تاريخ معالجة الأغذية", "تكنولوجيا معالجة الأغذية", "تأثير التقنيات على الصحة"],
+      "image": "/img/healthy.jpg"
+    },
+    {
+      "id": 14,
+      "title": "إعداد معلم رقمي", 
+      "description": "إعداد معلمين رقميين محترفين",
+      "duration": "3 إلى 4 شهور",
+      "price":  "3500",
+      "content": ["مهارات الاتصال", "مهارات العرض", "لغة الجسد", "التقييم الحديث"],
+      "image": "/img/teacher.jpg"
+    },
+    {
+      "id": 15,
+      "title": "التحكيم في عقود الاستثمار",
+      "description": "تخصص في التحكيم في عقود الاستثمار", 
+      "duration": "3 إلى 4 شهور",
+      "price":  "2900",
+      "content": ["الأحكام العامة في التحكيم", "صياغة اتفاق التحكيم", "إجراءات التحكيم"],
+      "image": "/img/equipe.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Digital Marketing",
+      "description": "تعلم التسويق الرقمي والإلكتروني", 
+      "duration": "3 إلى 4 شهور",
+      "price":  "3400",
+      "content": ["Social Media Marketing", "E-Commerce", "Facebook Ads", "Google Ads"],
+      "image": "/img/digital-marketing.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Journalist and E-writer",
+      "description": "إعداد صحفيين وكتاب إلكترونيين",
+      "duration": "3 إلى 4 شهور", 
+      "price":  "1200",
+      "content": ["الإعلام الجديد", "كتابة الأخبار", "المقالات", "مهارات الكتابة"],
+      "image": "/img/Journalist-and-E-writer.jpg"
+    },
+    {
+      "id": 18,
+      "title": "مهندس إنشائي ومعماري",
+      "description": "برنامج الهندسة الإنشائية والمعمارية",
+      "duration": "3 إلى 4 شهور",
+      "price":  "2400", 
+      "content": ["AutoCAD 2017", "SAP v.18.2", "Safe2016", "CSI Column v8.2"],
+      "image": "/img/enginer.jpg"
+    },
+    {
+      "id": 19,
+      "title": "مدير مشاريع هندسة",
+      "description": "إدارة المشاريع الهندسية",
+      "duration": "3 إلى 4 شهور",
+      "price":  "1200",
+      "content": ["دورة حياة المشروع", "عناصر إدارة المشروع", "مهارات مدير المشروع"],
+      "image": "/img/managerEnginer.jpg"
+    },
+    {
+      "id": 20,
+      "title": "تغذية المياه والصرف للمباني", 
+      "description": "تصميم مشاريع تغذية المياه والصرف",
+      "duration": "3 إلى 4 شهور",
+      "price":  "3300",
+      "content": ["أنظمة التغذية بالماء", "أنواع المواسير", "شبكات الصرف الصحي", "Revit MEP"],
+      "image": "/img/bulding.jpg"
+    },
+    {
+      "id": 21,
+      "title": "أنظمة مكافحة الحريق",
+      "description": "تخصص في أنظمة مكافحة الحرائق", 
+      "duration": "3 إلى 4 شهور",
+      "price":  "1300",
+      "content": ["شرح أنظمة مكافحة الحرائق", "اختيار التصميم المناسب", "أسس شبكات الحريق"],
+      "image": "/img/fire-fighting.jpg"
+    },
+    {
+      "id": 22,
+      "title": "أنظمة الغازات الطبية",
+      "description": "تخصص في أنظمة الغازات الطبية",
+      "duration": "3 إلى 4 شهور",
+      "price":  "1600", 
+      "content": ["أنظمة الغازات الطبية", "اختيار المعدات", "أنظمة الأوكسجين", "الهواء المضغوط"],
+      "image": "/img/anesthesiologist.jpg"
+    },
+    {
+      "id": 23,
+      "title": "إدارة الجودة الشاملة",
+      "description": "نظام إدارة الجودة",
+      "duration": "3 إلى 4 شهور",
+      "price":  "6200",
+      "content": ["مفاهيم إدارة الجودة", "التخطيط الاستراتيجي", "قياس الأداء", "تحسين الجودة"],
+      "image": "/img/environment.jpg"
+    },
+    {
+      "id": 24,
+      "title": "إعداد أخصائي نطق",
+      "description": "إعداد أخصائي علاج نطق ولغة", 
+      "duration": "3 إلى 4 شهور",
+      "price":  "2200",
+      "content": ["أمراض النطق واللغة", "الخطة العلاجية", "متلازمة داون", "التأخر العقلي"],
+      "image": "/img/speaking.jpg"
+    },
+    {
+      "id": 25,
+      "title": "إبداع الرقمية",
+      "description": "برنامج الإبداع الرقمي",
+      "duration": "3 إلى 4 شهور",
+      "price":  "1800", 
+      "content": ["3D Max", "AutoCAD", "Photoshop", "Corel Draw"],
+      "image": "/img/Analytics.jpg"
+    },
+    {
+      "id": 26,
+      "title": "المحاسب الإلكتروني",
+      "description": "إعداد محاسب إلكتروني متكامل",
+      "duration": "3 إلى 4 شهور", 
+      "price":  "7200",
+      "content": ["المحاسبة المالية الدفترية", "إعداد دليل حسابات", "تحليل القوائم المالية", "المحاسبة الإلكترونية"],
+      "image": "/img/accountant.jpg"
+    }
+  ]
+}
