@@ -39,7 +39,7 @@ function Favorites() {
           </h2>
 
           <button
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/courses")}
             className=" cursor-pointer px-6 py-3 bg-[#000524] text-yellow-400 rounded-xl shadow-md border-3 border-yellow-400 transition"
           >
             أضف كورسات

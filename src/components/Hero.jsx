@@ -44,10 +44,10 @@ function Hero() {
 
 
   return (
-    <section className="min-h-screen relative  top-0 bg-[#000524] text-white py-5 overflow-hidden">
-      <dir className="absolute top-0 inset-0 bg-[#000318]">
-        <img src="/img/bg-intro-desktop.png" alt="" />
-      </dir>
+    <section className="h-[calc(100vh-130px)] relative  top-0 bg-[#000524] text-white py-5 overflow-hidden">
+      <div className="absolute top-0 inset-0 bg-[#000318]">
+        <img src="/img/bg-intro-desktop.png" className="h-full w-full object-cover md:object-none" alt="" />
+      </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center">

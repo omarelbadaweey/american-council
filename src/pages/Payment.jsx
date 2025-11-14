@@ -104,13 +104,13 @@ export default function PaymentMethods() {
         <meta property="og:description" content="دفع آمن وسريع لكورسات الهندسة والبرمجة بطرق متعددة" />
       </Helmet>
    
-      <section className="bg-gray-300 text-white pb-10">
+      <section className="bg-gray-300 text-white pb-10 ">
         {copy && (
           <div className="bg-green-600 w-full fixed top-30 z-10 left-0 h-20 text-center text-4xl font-bold content-center">
             تم النسخ
           </div>
         )}
-        <div className="text-center mb-16 bg-[#000524] w-full p-10 border-b-10 border-yellow-500">
+        <div className="text-center mb-16 bg-[#000524] w-full p-10 border-b-10 border-yellow-500 ">
           <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-6">
             طرق الدفع المتاحة
           </h2>
@@ -118,7 +118,7 @@ export default function PaymentMethods() {
             اختر طريقة الدفع المناسبة وقم بإتمام عملية الدفع بسهولة وأمان تام
           </p>
         </div>
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto px-5">
           {/* الكروت */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {methods.map((method) => (
