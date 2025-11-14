@@ -1,17 +1,17 @@
-import { motion } from 'framer-motion'
-import React from 'react'
+import { motion } from "framer-motion";
+import React from "react";
 
-function Transition({children}) {
+function Transition({ children }) {
   return (
-    <motion.div 
-        initial={{opacity:0, y:20,}}
-        animate={{opacity:1 , y:0}}
-        exit={{opacity:0, y:-20}}
-        transition={{duration:0.7}}
+    <motion.div
+      initial={{ opacity: 0.5, y: 0 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0.5, y: 0 }}
+      transition={{ duration: 0.7 }}
     >
-        {children}
+      {children}
     </motion.div>
-  )
+  );
 }
 
-export default Transition
+export default Transition;

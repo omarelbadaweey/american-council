@@ -1,100 +1,110 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
+
+// استيراد أنماط Swiper
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 function Hero() {
   const categories = [
     {
       title: "برمجة وتطوير الويب",
-      image: "/img/Front&Back.jpg",
+      image: "/img/ai.png",
       courses: "Frontend & Backend",
     },
     {
       title: "اللغات الأجنبية",
-      image:
-        "/img/all-languages.jpg",
+      image: "/img/fr.png",
       courses: "إنجليزي - ألماني - فرنسي",
     },
     {
       title: "التسويق الرقمي",
-      image:
-        "/img/Course-Digital-Markting.jpg",
+      image: "/img/mark.png",
       courses: "سوشيال ميديا - إعلانات",
     },
     {
       title: "التصميم الجرافيكي",
-      image:
-        "/img/Course-Graphic.jpg",
+      image: "/img/dig.png",
       courses: "فوتوشوب - Illustrator",
     },
     {
       title: "الهندسة والتصميم",
-      image:
-        "/img/AutoCAD.jpg",
+      image: "/img/Gem.png",
+      courses: "AutoCAD - 3D Max",
+    },
+    {
+      title: "البرمجه والتصميم",
+      image: "/img/parm.png",
       courses: "AutoCAD - 3D Max",
     },
   ];
 
 
   return (
-    <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-purple-800 text-white py-24 overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/4 w-60 h-60 bg-blue-400/10 rounded-full blur-2xl animate-bounce"></div>
-      </div>
+    <section className="min-h-screen relative  top-0 bg-[#000524] text-white py-5 overflow-hidden">
+      <dir className="absolute top-0 inset-0 bg-[#000318]">
+        <img src="/img/bg-intro-desktop.png" alt="" />
+      </dir>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-5xl md:text-7xl font-bold mb-10 animate-fade-in-up">
+        <div className="text-center">
+          <h2 className="text-3xl italic sm:text-5xl md:text-5xl font-bold mb-2  animate-fade-in-up">
             Amercan Council
           </h2>
-          <p className="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed max-w-3xl mx-auto">
-            تأهيل كوادر محترفة قادرة على نقل التكنولوجيا داخل المجتمع
-          </p>
-          <button className="bg-white text-blue-600 px-10 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition-all duration-300 transform shadow-lg animate-bounce-slow">
-            ابدأ رحلتك التعليمية 🚀
-          </button>
         </div>
 
-
-        <div className="mt-16">
-          <div className="relative">
-            <div className="flex overflow-x-auto pb-8  space-x-reverse scrollbar-hide snap-x snap-mandatory">
+        <div className="mt-5 w-full md:w-[90%] mx-auto">
+            <Swiper
+              modules={[Autoplay, Navigation, Pagination]}
+              spaceBetween={30}
+              slidesPerView={1}
+              loop={true}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
+              speed={800}
+              className="w-full"
+            >
               {categories.map((category, index) => (
-                <div
-                  key={index}
-                  className="flex-shrink-0 w-80 mx-3 snap-center transform transition-all duration-500 hover:scale-105"
-                >
-                  <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:border-white/40 transition-all duration-300 hover:shadow-2xl">
-                    <div className="relative h-48 mb-4 rounded-xl overflow-hidden">
-                      <img
-                        src={category.image}
-                        alt={category.title}
-                        className="w-full h-full object-cover transform hover:scale-110 transition duration-700"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                      <div className="absolute bottom-4 right-4 text-white">
-                        <h3 className="text-xl font-bold">{category.title}</h3>
-                        <p className="text-blue-200 text-sm">
-                          {category.courses}
-                        </p>
+                <SwiperSlide key={category.id}>
+                  <div className="relative group w-full ">
+                    <div className="border-yellow-400/70 border-6 bg-[#000524]  backdrop-blur-lg rounded-2xl p-1   transition-all duration-500 hover:shadow-2xl overflow-hidden w-full">
+                      <div className="relative w-full h-90  rounded-xl overflow-hidden">
+                        <img
+                          src={category.image}
+                          alt={category.title}
+                          className="w-full h-full  object-cover "
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                        <div className="absolute bottom-4 right-4 text-white z-10">
+                          <h3 className="text-2xl font-bold mb-1">
+                            {category.title}
+                          </h3>
+                          <p className="text-blue-200 text-sm bg-black/30 px-3 py-1 rounded-full inline-block">
+                            {category.courses}
+                          </p>
+                        </div>
+                        <div className="absolute top-4 left-4">
+                          <span className="bg-yellow-400  text-white text-xs font-bold px-3 py-1 rounded-full">
+                            #{index + 1}
+                          </span>
+                        </div>
+                        <div className="absolute top-3 right-4 w-23 h-23 border-3 overflow-hidden flex items-center border-yellow-400 shadow-2xl rounded-full">
+
+                         <img src="/img/amercan.png" className=" w-full h-full object-cover " alt="" />
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </SwiperSlide>
               ))}
-            </div>
+            </Swiper>
 
-            {/* Scroll Indicator */}
-            <div className="flex justify-center mt-6 space-x-reverse">
-              {[1, 2, 3, 4, 5].map((dot) => (
-                <div
-                  key={dot}
-                  className="w-3 mx-2 h-3 bg-white/30 rounded-full hover:bg-white/60 transition-all duration-300 cursor-pointer"
-                ></div>
-              ))}
-            </div>
           </div>
-        </div>
       </div>
     </section>
   );

@@ -20,22 +20,8 @@
   }
 }
 
-.animate-fade-in-up {
-  animation: fade-in-up 1s ease-out;
-}
 
-.animate-bounce-slow {
-  animation: bounce-slow 2s infinite;
-}
 
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -62,10 +48,33 @@ body {
 }
 /*  active*/
 .active{
-  color: #60a5fa ;
+  color: white ;
+  background-color: #000524;
+
 }
 
  /* scrollbar */
 html {
-  scrollbar-color: #60a5fa  #ffffff00;
+  scrollbar-color:#facc15  #000524  ;
+}
+
+/* 
+ */
+
+ .text-over-flow{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    transform: scale();
+}
+
+/*  */
+
+@media (max-width:868px) {
+  .text-info {
+    text-align: center;
+    margin-top: 25px;
+  }
 }
