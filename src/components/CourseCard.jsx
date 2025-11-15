@@ -26,6 +26,7 @@ const CourseCard = ({ course }) => {
         <img 
           src={course.image} 
           alt={course.title}
+          loading='lazy'
           className="w-full h-48 object-cover"
         />
         <button onClick={handelAdd} className={` cursor-pointer absolute top-4 right-3 text-3xl border-3 p-1 rounded-full border-yellow-500 bg-white text-yellow-500 ${isInFav? "" : " animate-bounce"}`} >{isInFav?<FaHeart/> :<FaRegHeart />  }</button>

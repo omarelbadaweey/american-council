@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Transition from "../components/Transition";
 import { Helmet } from "react-helmet";
+import Back from "../components/context/Back";
 
 export default function PaymentMethods() {
   const paymentData = {
@@ -105,6 +106,7 @@ export default function PaymentMethods() {
       </Helmet>
    
       <section className="bg-gray-300 text-white pb-10 ">
+        <Back/>
         {copy && (
           <div className="bg-green-600 w-full fixed top-30 z-10 left-0 h-20 text-center text-4xl font-bold content-center">
             تم النسخ

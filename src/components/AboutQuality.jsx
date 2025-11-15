@@ -2,6 +2,7 @@
 function AboutQuality() {
   return (
       <section>
+        
     <div className="w-full py-20 px-6 md:px-12">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         

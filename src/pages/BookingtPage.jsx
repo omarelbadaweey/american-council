@@ -47,7 +47,7 @@ function BookingtPage({ targetNumber }) {
           content="اكمل عملية التسجيل وابدأ رحلة التعلم مع أفضل المدربين"
         />
       </Helmet>
-      
+  
       <div
         dir="auto"
         className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-[#000524] px-4 py-8"

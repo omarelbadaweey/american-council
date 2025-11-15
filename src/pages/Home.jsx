@@ -86,6 +86,7 @@ function Home() {
             className="bg-white border-3 border-yellow-400 rounded-2xl shadow-2xl p-3 flex flex-col items-center hover:scale-105 transition-transform duration-500"
           >
             <img
+            loading="lazy"
               src={item.img}
               alt={item.name}
               className="w-28 h-28 mb-4 rounded-xl object-cover"
@@ -108,6 +109,7 @@ function Home() {
       <div className="flex flex-wrap px-5 justify-around bg-[#000524] py-7 mt-10 border-y-8  border-yellow-400">
         <div className="w-80 sm:w-100 h-80 sm:h-100">
           <img
+          loading="lazy"
             src="/img/hero.png"
             className="w-full h-full object-cover"
             alt="صوره شخصيه للدكتور/ ايه الملاح"
@@ -121,7 +123,7 @@ function Home() {
             <br />
             <span className="mt-5 block"> أيه محمد الملاح</span>
           </h2>
-          <div className="text-lg  space-y-1">
+          <div className=" text-lg  space-y-1">
             <p> باحث دكتوراه بالقضايا المجتمعيه *</p>
             <p> رئيس مجلس الاداره *</p>
             <p> بكالوريوس خدمه اجتماعيه جامعه المنصوره *</p>
@@ -139,6 +141,7 @@ function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 ">
           <div className="border-3 outline-4 outline-[#000524] border-yellow-400 mt-5  rounded-4xl overflow-hidden group cursor-grab">
             <img
+            loading="lazy"
               src="/img/30.jpg"
               className="object-cover group-hover:scale-[1.1]  group-hover:rotate-1 transition-all duration-300"
               alt="توثيق اعمالنا "
@@ -147,12 +150,14 @@ function Home() {
           <div className="border-3 outline-4 outline-[#000524] border-yellow-400 mt-5  rounded-4xl overflow-hidden group cursor-grab">
             <img
               src="/img/31.jpg"
+              loading="lazy"
               className="object-cover group-hover:scale-[1.1]  group-hover:rotate-1 transition-all duration-300"
               alt="توثيق اعمالنا "
             />
           </div>
           <div className="border-3 outline-4 outline-[#000524] border-yellow-400 mt-5  rounded-4xl overflow-hidden group cursor-grab">
             <img
+            loading="lazy"
               src="/img/32.jpg"
               className="object-cover group-hover:scale-[1.1]  group-hover:rotate-1 transition-all duration-300"
               alt="توثيق اعمالنا "
@@ -160,6 +165,7 @@ function Home() {
           </div>
           <div className="border-3 outline-4 outline-[#000524] border-yellow-400 mt-5  rounded-4xl overflow-hidden group cursor-grab">
             <img
+            loading="lazy"
               src="/img/33.jpg"
               className="object-cover group-hover:scale-[1.1]  group-hover:rotate-1 transition-all duration-300"
               alt="توثيق اعمالنا "

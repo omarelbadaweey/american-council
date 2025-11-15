@@ -4,6 +4,7 @@ import CoursesData from "../data.json";
 import CourseCard from "../components/CourseCard";
 import Transition from "../components/Transition";
 import { Helmet } from "react-helmet";
+import Back from "../components/context/Back";
 
 function SearchPage() {
   const location = useLocation();
@@ -54,6 +55,7 @@ function SearchPage() {
 
   return (
     <Transition>
+      <Back/>
       <Helmet>
         <title>البحث عن الكورسات - American Council</title>
         <meta
@@ -73,7 +75,7 @@ function SearchPage() {
           content="ابحث عن الكورسات المناسبة بمختلف التخصصات والمستويات"
         />
       </Helmet>
-      <div className="bg-gray-300">
+      <div className="bg-gray-300 pt-5">
         <div className="container mx-auto px-4 py-8 ">
           <div className="mb-4 mx-auto text-center " dir="rtl">
             <h1 className="text-3xl font-bold text-gray-800">

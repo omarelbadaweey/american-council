@@ -5,25 +5,29 @@ import CourseCard from "../components/CourseCard";
 import { useNavigate } from "react-router-dom";
 import Transition from "../components/Transition";
 import { Helmet } from "react-helmet";
+import Back from "../components/context/Back";
 function Favorites() {
   const { favItems } = useContext(CartContext);
   const navigate = useNavigate();
   return (
     <Transition>
-      {/* <Helmet>
-        <title>Favorites</title>
-        <meta name="description" content="Favorites" />
-        <meta name="keywords" content="Favorites" />
-      </Helmet> */}
-
-
       <Helmet>
-  <title>قائمة المفضلة - American Council</title>
-  <meta name="description" content="قائمة الكورسات المفضلة لديك في American Council - احفظ الكورسات التي تعجبك وعد لها لاحقاً. إدارة سهلة للمفضلة" />
-  <meta name="keywords" content="المفضلة, كورسات مفضلة, حفظ كورسات, American Council, قائمة المفضلة, wishlist" />
-  <meta property="og:title" content="قائمة المفضلة - American Council" />
-  <meta property="og:description" content="احفظ الكورسات المفضلة لديك وعد لها لاحقاً" />
-</Helmet>
+        <title>قائمة المفضلة - American Council</title>
+        <meta
+          name="description"
+          content="قائمة الكورسات المفضلة لديك في American Council - احفظ الكورسات التي تعجبك وعد لها لاحقاً. إدارة سهلة للمفضلة"
+        />
+        <meta
+          name="keywords"
+          content="المفضلة, كورسات مفضلة, حفظ كورسات, American Council, قائمة المفضلة, wishlist"
+        />
+        <meta property="og:title" content="قائمة المفضلة - American Council" />
+        <meta
+          property="og:description"
+          content="احفظ الكورسات المفضلة لديك وعد لها لاحقاً"
+        />
+      </Helmet>
+      <Back />
       {favItems.length === 0 ? (
         <div
           className="flex flex-col items-center justify-center h-[80vh] text-center px-4"

@@ -1,6 +1,7 @@
 import React from "react";
 import Transition from "../components/Transition";
 import { Helmet } from "react-helmet";
+import Back from "../components/context/Back";
 const AboutUs = () => {
   return (
     <Transition>
@@ -26,8 +27,10 @@ const AboutUs = () => {
         dir="rtl"
         className=" min-h-screen bg-gradient-to-br from-gray-200 to-blue-100"
       >
+        <Back/>
         {/* Hero Section */}
         <section dir="ltr" className="relative py-16 bg-[#000524] text-white">
+          
           <div className="container mx-auto px-4 text-center">
             <div className="max-w-4xl mx-auto">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
