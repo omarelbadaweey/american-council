@@ -4,7 +4,7 @@ import CoursesData from "../data.json";
 import CourseCard from "../components/CourseCard";
 import Transition from "../components/Transition";
 import { Helmet } from "react-helmet";
-import Back from "../components/context/Back";
+import Back from "../components/Back";
 
 function SearchPage() {
   const location = useLocation();

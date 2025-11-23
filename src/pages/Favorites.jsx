@@ -5,7 +5,7 @@ import CourseCard from "../components/CourseCard";
 import { useNavigate } from "react-router-dom";
 import Transition from "../components/Transition";
 import { Helmet } from "react-helmet";
-import Back from "../components/context/Back";
+import Back from "../components/Back";
 function Favorites() {
   const { favItems } = useContext(CartContext);
   const navigate = useNavigate();

@@ -1,7 +1,7 @@
 import React from "react";
 import Transition from "../components/Transition";
 import { Helmet } from "react-helmet";
-import Back from "../components/context/Back";
+import Back from "../components/Back";
 const AboutUs = () => {
   return (
     <Transition>

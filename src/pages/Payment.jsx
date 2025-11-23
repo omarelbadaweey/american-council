@@ -2,12 +2,12 @@
 import React, { useState } from "react";
 import Transition from "../components/Transition";
 import { Helmet } from "react-helmet";
-import Back from "../components/context/Back";
+import Back from "../components/Back";
 
 export default function PaymentMethods() {
   const paymentData = {
     vodafoneCash: {
-      number: "01095922032",
+      number: "01098825176",
       owner: " ايه محمدالملاح",
     },
     instapay: {
@@ -29,23 +29,23 @@ export default function PaymentMethods() {
       type: "vodafone",
       data: paymentData.vodafoneCash,
     },
+    // {
+    //   id: 2,
+    //   name: "PayPal",
+    //   icon: (
+    //     <svg viewBox="0 0 24 24" className="text-blue-400 text-4xl">
+    //       <path
+    //         fill="currentColor"
+    //         d="M7.5 14.25c0 .83.67 1.5 1.5 1.5h6c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5H9c-.83 0-1.5.67-1.5 1.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+    //       />
+    //     </svg>
+    //   ),
+    //   description: "الدفع عبر حساب PayPal",
+    //   type: "paypal",
+    //   data: paymentData.paypal,
+    // },
     {
       id: 2,
-      name: "PayPal",
-      icon: (
-        <svg viewBox="0 0 24 24" className="text-blue-400 text-4xl">
-          <path
-            fill="currentColor"
-            d="M7.5 14.25c0 .83.67 1.5 1.5 1.5h6c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5H9c-.83 0-1.5.67-1.5 1.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-          />
-        </svg>
-      ),
-      description: "الدفع عبر حساب PayPal",
-      type: "paypal",
-      data: paymentData.paypal,
-    },
-    {
-      id: 3,
       name: "InstaPay",
       icon: (
         <svg viewBox="0 0 24 24" className="text-green-500 text-4xl">
@@ -120,6 +120,8 @@ export default function PaymentMethods() {
             اختر طريقة الدفع المناسبة وقم بإتمام عملية الدفع بسهولة وأمان تام
           </p>
         </div>
+
+
         <div className="max-w-6xl mx-auto px-5">
           {/* الكروت */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -233,7 +235,7 @@ export default function PaymentMethods() {
           {/* ملاحظة */}
           <div className="text-center mt-10 p-6 bg-[#000524] rounded-2xl border border-yellow-400/30">
             <p className="text-yellow-400 text-lg">
-              💡 بعد إتمام الدفع، يرجى إرسال إشعار الدفع على الواتساب: 01095922032
+              💡 بعد إتمام الدفع، يرجى إرسال إشعار الدفع على الواتساب: 01098825176
             </p>
           </div>
         </div>

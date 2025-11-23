@@ -4,7 +4,7 @@ import coursesData from "../data.json";
 import Hero from "../components/Hero";
 import Transition from "../components/Transition";
 import { Helmet } from "react-helmet";
-import Back from "../components/context/Back";
+import Back from "../components/Back";
 
 const Coures = () => {
   const { courses } = coursesData;

@@ -68,7 +68,7 @@
       "title": "إعداد محاضر لغات أجنبية",
       "description": "إعداد محاضرين متخصصين في اللغات الأجنبية",
       "duration": "3 إلى 4 شهور",
-      "price":  "1300",
+      "price":  1300,
       "content": ["English", "French", "Italian", "German", "Russian", "Chinese"],
       "image": "/img/languages.jpg"
     },

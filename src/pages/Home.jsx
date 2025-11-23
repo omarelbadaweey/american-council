@@ -38,19 +38,26 @@ function Home() {
   return (
     <section className="bg-gray-100">
 
-      {/* <Helmet>
-        <title>Home Page</title>
-        <meta name="description" content="Home Page" />
-        <meta name="keywords" content="Home Page" />
-      </Helmet> */}
-      
+
       <Helmet>
-  <title>American Council - مركز الكورسات بجامعة المنصورة</title>
-  <meta name="description" content="American Council بجامعة المنصورة - كورسات تعليمية متقدمة في الهندسة والبرمجة واللغات بأفضل الأسعار وأعلى جودة" />
-  <meta name="keywords" content="كورسات, جامعة المنصورة, American Council, هندسة, برمجة, لغات, تعليم" />
-  <meta property="og:title" content="American Council - مركز الكورسات بجامعة المنصورة" />
-  <meta property="og:description" content="كورسات تعليمية متقدمة في الهندسة والبرمجة واللغات" />
-</Helmet>
+        <title>American Council - مركز الكورسات بجامعة المنصورة</title>
+        <meta
+          name="description"
+          content="American Council بجامعة المنصورة - كورسات تعليمية متقدمة في الهندسة والبرمجة واللغات بأفضل الأسعار وأعلى جودة"
+        />
+        <meta
+          name="keywords"
+          content="كورسات, جامعة المنصورة, American Council, هندسة, برمجة, لغات, تعليم"
+        />
+        <meta
+          property="og:title"
+          content="American Council - مركز الكورسات بجامعة المنصورة"
+        />
+        <meta
+          property="og:description"
+          content="كورسات تعليمية متقدمة في الهندسة والبرمجة واللغات"
+        />
+      </Helmet>
       {/*  */}
       <Hero />
 
@@ -79,14 +86,14 @@ function Home() {
       </svg>
 
       {/*  */}
-      <div className="px-10 mx-auto py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4 gap-8 ">
+      <section className="px-10 mx-auto py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4 gap-8 ">
         {products.map((item) => (
           <div
             key={item.id}
             className="bg-white border-3 border-yellow-400 rounded-2xl shadow-2xl p-3 flex flex-col items-center hover:scale-105 transition-transform duration-500"
           >
             <img
-            loading="lazy"
+              loading="lazy"
               src={item.img}
               alt={item.name}
               className="w-28 h-28 mb-4 rounded-xl object-cover"
@@ -103,13 +110,13 @@ function Home() {
             </a>
           </div>
         ))}
-      </div>
+      </section>
 
       {/*  */}
-      <div className="flex flex-wrap px-5 justify-around bg-[#000524] py-7 mt-10 border-y-8  border-yellow-400">
+      <section className="flex flex-wrap px-5 justify-around bg-[#000524] py-7 mt-10 border-y-8  border-yellow-400">
         <div className="w-80 sm:w-100 h-80 sm:h-100">
           <img
-          loading="lazy"
+            loading="lazy"
             src="/img/hero.png"
             className="w-full h-full object-cover"
             alt="صوره شخصيه للدكتور/ ايه الملاح"
@@ -130,10 +137,35 @@ function Home() {
             <p> ماجستير فى علم الاجتماع كليه الاداب , جامعه المنصوره *</p>
           </div>
         </div>
-      </div>
+      </section>
 
-        {/*  */}
-      <div className="py-10 px-6">
+      {/*  */}
+      <section className="py-10 ">
+        <h2 className=" relative w-fit mx-auto before:w-full before:bg-yellow-400 before:h-1 before:absolute before:-bottom-5  after:w-7 after:h-7 after:absolute after:-bottom-8 after:left-[50%] after:-translate-x-[50%] after:right-[50%]  after:rounded-full after:bg-yellow-300 after:border-3 text-4xl font-bold text-[#000524] text-center mb-16">
+          الاعتمادات
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 ">
+          <div className="mb-12 md:mb-0 mx-auto outline-5 outline-[#000524] rounded-lg w-90 lg:w-120 h-60 lg:h-70 flex items-center justify-center">
+            <img
+              src="/img/examp1.png"
+              alt="الصورة الأولى"
+              className="w-full h-full object-cover "
+            />
+          </div>
+
+          <div className=" mx-auto outline-5 outline-yellow-900 rounded-lg  w-90 lg:w-120 h-60 lg:h-70 flex items-center justify-center">
+            <img
+              src="/img/examp2.png"
+              alt="الصورة الثانية"
+              className="w-full h-full object-cover rounded"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/*  */}
+      <section className="py-10 px-6">
         <h2 className=" relative w-fit mx-auto before:w-full before:bg-yellow-400 before:h-1 before:absolute before:-bottom-5  after:w-7 after:h-7 after:absolute after:-bottom-8 after:left-[50%] after:-translate-x-[50%] after:right-[50%]  after:rounded-full after:bg-yellow-300 after:border-3 text-4xl font-bold text-[#000524] text-center mb-16">
           توثيق أعمالنا
         </h2>
@@ -141,7 +173,7 @@ function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 ">
           <div className="border-3 outline-4 outline-[#000524] border-yellow-400 mt-5  rounded-4xl overflow-hidden group cursor-grab">
             <img
-            loading="lazy"
+              loading="lazy"
               src="/img/30.jpg"
               className="object-cover group-hover:scale-[1.1]  group-hover:rotate-1 transition-all duration-300"
               alt="توثيق اعمالنا "
@@ -157,7 +189,7 @@ function Home() {
           </div>
           <div className="border-3 outline-4 outline-[#000524] border-yellow-400 mt-5  rounded-4xl overflow-hidden group cursor-grab">
             <img
-            loading="lazy"
+              loading="lazy"
               src="/img/32.jpg"
               className="object-cover group-hover:scale-[1.1]  group-hover:rotate-1 transition-all duration-300"
               alt="توثيق اعمالنا "
@@ -165,17 +197,17 @@ function Home() {
           </div>
           <div className="border-3 outline-4 outline-[#000524] border-yellow-400 mt-5  rounded-4xl overflow-hidden group cursor-grab">
             <img
-            loading="lazy"
+              loading="lazy"
               src="/img/33.jpg"
               className="object-cover group-hover:scale-[1.1]  group-hover:rotate-1 transition-all duration-300"
               alt="توثيق اعمالنا "
             />
           </div>
         </div>
-      </div>
+      </section>
 
-        {/*  */}
-        <AboutQuality/>
+      {/*  */}
+      <AboutQuality />
     </section>
   );
 }

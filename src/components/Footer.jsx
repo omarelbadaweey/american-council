@@ -44,8 +44,8 @@ const Footer = () => {
             </div>
 
             <div>
-              <h3 className="text-lg font-bold mb-2">روابط سريعة</h3>
-              <ul className="space-y-1">
+              <h3 className="text-lg font-bold mb-6 text-yellow-400">روابط سريعة</h3>
+              <ul className="space-y-2">
                 <li>
                   <Link
                     to={"/"}
@@ -78,20 +78,38 @@ const Footer = () => {
                     حجز الكورس
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    to={"/payment"}
+                    className="text-gray-300 hover:text-yellow-400"
+                  >
+                     طرق الدفع
+                  </Link>
+                </li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-lg font-bold mb-4">معلومات الاتصال</h3>
-              <a 
-              href="https://api.whatsapp.com/send/?phone=201095922032&text&type=phone_number&app_absent=0"
-              className="text-yellow-400 hover:underline">
+              <h3 className="text-lg font-bold mb-4 text-yellow-400">معلومات الاتصال</h3>
+              <a
+                href="https://api.whatsapp.com/send/?phone=201095922032&text&type=phone_number&app_absent=0"
+                className="text-yellow-400 hover:underline "
+              >
                 {" "}
                 تواصل معنا{" "}
               </a>
+              <hr />
               <p className="text-gray-300 my-2">
-                العنوان : جامعه المنصوره كلية الهندسة{" "}
+                العنوان الرئيسي : محافظه الدقهليه - مدينه المنصوره - اول شارع
+                الترعه برج اهل الشام اعلي احمد امين - الدور الاول علوي -
+                American Council
               </p>
+              <hr />
+              <p className="text-gray-300 my-2">
+                عنوان اخر :: محافظه الدقهليه - مدينه المنصوره - جامعه المنصوره -
+                كليه الهندسه - الدور الرابع بلوك(5)
+              </p>
+              <hr />
               <p className="text-gray-300">تحت اشراف : د/ آية الملاح</p>
             </div>
           </div>
