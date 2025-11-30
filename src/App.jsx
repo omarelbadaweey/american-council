@@ -13,16 +13,18 @@ import SearchPage from "./pages/SearchPage";
 import BookingtPage from "./pages/BookingtPage";
 import Home from "./pages/Home";
 import TrainingTerms from "./pages/TrainingTerms";
+import Test from "./pages/Test";
 
 function App() {
   return (
     <>
       <div className="">
-        <Header />
+        {/* <Header /> */}
         <ScrollToTop />
         <AnimatePresence mode="wait">
           <Routes>
-            <Route path="/" element={<Home />} />
+            {/* <Route path="/" element={<Home />} /> */}
+            <Route path="/" element={<Test />} />
             <Route path="/courses" element={<Coures />} />
             <Route path="/courses/:id" element={<CourseDetails />} />
             <Route path="/about" element={<About />} />
@@ -34,10 +36,9 @@ function App() {
           </Routes>
         </AnimatePresence>
 
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );
 }
-
 export default App;
