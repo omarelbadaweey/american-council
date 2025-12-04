@@ -103,6 +103,18 @@ const CourseDetails = () => {
                       {course.price} <span className="text-[#000524]">LE</span>
                     </span>
                   </div>
+                  <div className="flex items-start">
+                    <span className="font-semibold text-gray-700 w-34">
+                      سعر الماده العلميه:
+                    </span>
+                    <span
+                      dir="ltr"
+                      className=" text-yellow-400 text-lg font-bold underline"
+                    >
+                      {" "}
+                      {course.materialPrice} <span className="text-[#000524]">LE</span>
+                    </span>
+                  </div>
                 </div>
 
                 <div className="mb-8">

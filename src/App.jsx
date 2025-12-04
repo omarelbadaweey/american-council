@@ -19,24 +19,27 @@ function App() {
   return (
     <>
       <div className="">
-        {/* <Header /> */}
+        <Header />
         <ScrollToTop />
         <AnimatePresence mode="wait">
           <Routes>
-            {/* <Route path="/" element={<Home />} /> */}
-            <Route path="/" element={<Test />} />
+            <Route path="/" element={<Home />} />
+            {/* <Route path="/" element={<Test />} /> */}
             <Route path="/courses" element={<Coures />} />
             <Route path="/courses/:id" element={<CourseDetails />} />
             <Route path="/about" element={<About />} />
             <Route path="/payment" element={<Payment />} />
             <Route path="/favorites" element={<Favorites />} />
             <Route path="/search" element={<SearchPage />} />
-            <Route path="/booking" element={<BookingtPage targetNumber={"201095922032"}/>} />
+            <Route
+              path="/booking"
+              element={<BookingtPage targetNumber={"201095922032"} />}
+            />
             <Route path="/trainingterms" element={<TrainingTerms />} />
           </Routes>
         </AnimatePresence>
 
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );

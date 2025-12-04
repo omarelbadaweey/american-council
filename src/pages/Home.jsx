@@ -125,16 +125,16 @@ function Home() {
 
         <div className=" text-info text-right font-bold text-yellow-400 content-center  space-y-5">
           <p className="text-xl font-bold text-white mb-2"> تحت إشراف</p>
-          <h2 className="text-5xl ">
+          <h2 className="text-4xl ">
             الدكتور
             <br />
             <span className="mt-5 block"> أيه محمد الملاح</span>
           </h2>
-          <div className=" text-lg  space-y-1">
-            <p> باحث دكتوراه بالقضايا المجتمعيه *</p>
-            <p> رئيس مجلس الاداره *</p>
-            <p> بكالوريوس خدمه اجتماعيه جامعه المنصوره *</p>
-            <p> ماجستير فى علم الاجتماع كليه الاداب , جامعه المنصوره *</p>
+          <div dir="rtl" className=" text-lg   space-y-1">
+            <li> باحث دكتوراه بالقضايا المجتمعيه </li>
+            <li> رئيس مجلس الاداره </li>
+            <li> بكالوريوس خدمه اجتماعيه جامعه المنصوره </li>
+            <li> ماجستير فى علم الاجتماع كليه الاداب , جامعه المنصوره </li>
           </div>
         </div>
       </section>

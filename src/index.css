@@ -76,5 +76,6 @@ html {
   .text-info {
     text-align: center;
     margin-top: 25px;
+    list-style: none;
   }
 }
