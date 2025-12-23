@@ -67,7 +67,6 @@ const CourseCard = ({ course }) => {
               </p>
             </div>
           )}
-
           {/* closeToast */}
           {closeToast && (
             <div

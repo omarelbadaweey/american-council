@@ -13,7 +13,7 @@ import SearchPage from "./pages/SearchPage";
 import BookingtPage from "./pages/BookingtPage";
 import Home from "./pages/Home";
 import TrainingTerms from "./pages/TrainingTerms";
-import Test from "./pages/Test";
+// import Test from "./pages/Test";
 
 function App() {
   return (

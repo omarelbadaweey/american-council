@@ -85,12 +85,20 @@ function Home() {
         ></path>
       </svg>
 
+      <section>
+       <h2 className=" text-4xl font-bold text- text-center mb-1">حدد مستواك فى الانجليزيه </h2>
+       <p className="text-center font-bold text-[#000524]">اختبار تحديد مستوى اللغه الانجليزيه <span className="text-green-600 underline text-xl">مجانا</span></p>
+       <div className="w-50 h-1 bg-amber-400 mx-auto mt-3"></div>
+       <div className="w-60 h-60 mx-auto my-5 border-5 border-x-amber-400  rounded-xl overflow-hidden shadow-lg">
+        <img src="/img/TestEnglish.png" className="h-full w-full object-cover" alt="اختبار تحديد المستوى مجانا"  />
+       </div>
+      </section>
       {/*  */}
-      <section className="px-10 mx-auto py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4 gap-8 ">
+      <section className="px-10 mx-auto py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4 gap-12 ">
         {products.map((item) => (
           <div
             key={item.id}
-            className="bg-white border-3 border-yellow-400 rounded-2xl shadow-2xl p-3 flex flex-col items-center hover:scale-105 transition-transform duration-500"
+            className="bg-white border-5 border-yellow-400 border-y-[#000524] rounded-[100px]  p-3 flex flex-col items-center hover:scale-102 hover:shadow-2xl transition-transform duration-500"
           >
             <img
               loading="lazy"
@@ -104,7 +112,7 @@ function Home() {
             <p className="text-gray-600 mb-4 text-center">{item.desc}</p>
             <a
               href={item.link}
-              className="bg-yellow-400 text-white px-6 py-2 rounded-full font-bold hover:bg-[#000524] hover:text-yellow-400 transition-colors duration-300"
+              className="text-yellow-400 hover:text-[#000524]  px-5.5 py-1.5 rounded-full font-bold bg-[#000524] hover:bg-yellow-400 border-3  border-[#000524] transition-all duration-500"
             >
               الذهاب{" "}
             </a>
