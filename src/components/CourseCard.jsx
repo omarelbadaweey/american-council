@@ -2,30 +2,22 @@ import React, { useContext, useState } from "react";
 import { FaCheck, FaHeart, FaRegHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { CartContext } from "./context/CartContext";
-import { FaXmark } from "react-icons/fa6";
+import toast from "react-hot-toast";
 
 const CourseCard = ({ course }) => {
   const { addToFavorite, favItems, removeFromFav } = useContext(CartContext);
 
-  //
   const isInFav = favItems.some((c) => c.id === course.id);
 
-  //
-  const [openToast, setOpenToast] = useState(false);
-  const [closeToast, setCloseToast] = useState(false);
   const handelAdd = () => {
+    toast.dismiss();
     if (isInFav) {
       removeFromFav(course.id);
-      setCloseToast(true);
-      setTimeout(() => {
-        setCloseToast(false);
-      }, 1500);
+    toast.error("تمت الإزالة من المفضلة ❌");
     } else {
       addToFavorite(course);
-      setOpenToast(true);
-      setTimeout(() => {
-        setOpenToast(false);
-      }, 1500);
+
+    toast.success("تمت الإضافة إلى المفضلة 💚");
     }
   };
 
@@ -55,31 +47,6 @@ const CourseCard = ({ course }) => {
           <div className="absolute top-4 left-4 bg-[#000524] text-yellow-400 px-3 py-1 rounded-full text-sm font-semibold">
             {course.duration}
           </div>
-
-          {/* openToast */}
-          {openToast && (
-            <div className="text-center absolute h-14 top-0 content-center  left-0 mx-auto w-full z-10 py-2 bg-[#000524] border-b-3 border-yellow-500 ">
-              <p className="flex items-center gap-5 justify-center text-white">
-                تمت اضافته للمفضله{" "}
-                <span className="p-1 rounded-full border-2 border-amber-50">
-                  <FaCheck />
-                </span>
-              </p>
-            </div>
-          )}
-          {/* closeToast */}
-          {closeToast && (
-            <div
-              className={`absolute h-14 content-center top-0  left-0 w-full z-10 py-2 bg-white border-red-600 border-b-3`}
-            >
-              <p className="flex items-center gap-5 justify-center text-red-700">
-                تمت ازالته من المفضله{" "}
-                <span className="p-1 rounded-full border-2 border-red-700">
-                  <FaXmark  />
-                </span>
-              </p>
-            </div>
-          )}
         </div>
 
         <div className="p-6">
