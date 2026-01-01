@@ -14,19 +14,25 @@ import BookingtPage from "./pages/BookingtPage";
 import Home from "./pages/Home";
 import TrainingTerms from "./pages/TrainingTerms";
 import { Toaster } from "react-hot-toast";
-// import Test from "./pages/Test";
+import Test from "./pages/Test";
 
 function App() {
   return (
     <>
     <Toaster/>
       <div className="">
-        <Header />
+        {/* <Header />  */}
         <ScrollToTop />
         <AnimatePresence mode="wait">
+          {/* Cancel webSite */}
           <Routes>
+            <Route path="/" element={<Test />} />
+          </Routes>
+
+            {/* Routes WebSite */}
+
+          {/* <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/" element={<Test />} /> */}
             <Route path="/courses" element={<Coures />} />
             <Route path="/courses/:id" element={<CourseDetails />} />
             <Route path="/about" element={<About />} />
@@ -38,10 +44,10 @@ function App() {
               element={<BookingtPage targetNumber={"201095922032"} />}
             />
             <Route path="/trainingterms" element={<TrainingTerms />} />
-          </Routes>
+          </Routes> */}
         </AnimatePresence>
 
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );
