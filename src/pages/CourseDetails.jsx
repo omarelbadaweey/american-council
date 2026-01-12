@@ -6,13 +6,13 @@ import { useContext } from "react";
 import { CartContext } from "../components/context/CartContext";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { Helmet } from "react-helmet";
+import toast from "react-hot-toast";
 // import ShowAlert from "../components/ShowAlert";
 
 const CourseDetails = () => {
   const { id } = useParams();
   const { courses } = coursesData;
   const course = courses.find((c) => c.id === parseInt(id));
-  // const [ showAlert , setShowAlert] = useState(false)
 
   const navigate = useNavigate();
 
@@ -22,10 +22,14 @@ const CourseDetails = () => {
 
   //
   const handelAdd = () => {
+    toast.dismiss()
     if (isInFav) {
       removeFromFav(course.id);
+          toast.error("تمت الإزالة من المفضلة ❌");
+
     } else {
       addToFavorite(course);
+       toast.success("تمت الإضافة إلى المفضلة 💚");
     }
   };
   if (!course) {

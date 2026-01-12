@@ -55,8 +55,9 @@ function Hero() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center">
           <h2 className="text-3xl italic sm:text-5xl md:text-5xl font-bold mb-2  animate-fade-in-up">
-            Amercan Council
+            American Council
           </h2>
+        <p className=" text-center mt-3 font-bold text-yellow-400">مرخص من قبل وزاره الاتصالات باعتماد جامعه المنصوره</p>
         </div>
 
         <div className="mt-5 w-full md:w-[90%] mx-auto">

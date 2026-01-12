@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, } from "react";
 import { FaCheck, FaHeart, FaRegHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { CartContext } from "./context/CartContext";
@@ -81,13 +81,14 @@ const CourseCard = ({ course }) => {
             <p className=" font-semibold text-lg text-[#000524] ">
               سعر الماده العلميه
             </p>
-            <span
+            <div
               dir="ltr"
-              className="ml-5 text-yellow-400 text-lg font-bold underline"
+              className=" text-yellow-400 text-lg font-bold flex items-center gap-1"
             >
               {" "}
-              {course.materialPrice} <span className="text-[#000524] ">LE</span>
-            </span>
+               <span className="text-[#000524] text-xs">{course.limit}</span>
+              <span className="underline">{course.materialPrice}</span>
+            </div>
           </div>
 
           <div className="flex items-center justify-between">

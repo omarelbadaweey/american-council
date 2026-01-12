@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { FaArrowUp } from "react-icons/fa";
+import { FaArrowUp, FaPhone, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   const [showBtn, setShowBtn] = useState(false);
@@ -30,7 +30,7 @@ const Footer = () => {
           <FaArrowUp />
         </button>
       )}
-      <footer dir="rtl" className="bg-[#000524] text-white py-8">
+      <footer dir="rtl" className="bg-[#000524] text-white py-8 ">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
@@ -91,13 +91,18 @@ const Footer = () => {
 
             <div>
               <h3 className="text-lg font-bold mb-4 text-yellow-400">معلومات الاتصال</h3>
-              <a
-                href="https://api.whatsapp.com/send/?phone=201095922032&text&type=phone_number&app_absent=0"
-                className="text-yellow-400 hover:underline "
-              >
-                {" "}
-                تواصل معنا{" "}
-              </a>
+              <div className="flex items-center gap-6 mb-3">
+              <p
+                className=" text-[16px] text-yellow-400">
+                تواصل معنا :
+              </p>
+
+              <div className="flex items-center gap-6">
+                <a className="text-4xl transition-all duration-300 hover:scale-110   text-green-500" href="https://wa.me/201098825176"><FaWhatsapp/></a>
+                <a className="text-3xl transition-all duration-300 hover:scale-110 text-blue-400" href="tel:+201098825176"><FaPhone/></a>
+              </div>
+
+              </div>
               <hr />
               <p className="text-gray-300 my-2">
                 العنوان الرئيسي : محافظه الدقهليه - مدينه المنصوره - اول شارع
@@ -106,18 +111,18 @@ const Footer = () => {
               </p>
               <hr />
               <p className="text-gray-300 my-2">
-                عنوان اخر :: محافظه الدقهليه - مدينه المنصوره - جامعه المنصوره -
+                عنوان اخر : محافظه الدقهليه - مدينه المنصوره - جامعه المنصوره -
                 كليه الهندسه - الدور الرابع بلوك(5)
               </p>
               <hr />
-              <p className="text-gray-300">تحت اشراف : د/ آية الملاح</p>
+              <p className="text-gray-300 mt-2">تحت اشراف : د/ آية الملاح</p>
             </div>
           </div>
 
-          <div className="border-t border-yellow-400 mt-8 pt-6 text-center">
+          <div className="border-t border-yellow-400 mt-8 pt-5 text-center">
             <p className="text-gray-400">
               <span className="text-yellow-400"> ©</span> 2025 جميع الحقوق
-              محفوظة لدى المجلس الأمريكي للتدريب والبرمجيات
+              محفوظة لدى <span className="text-yellow-400">المجلس الأمريكي</span> للتدريب والبرمجيات
             </p>
           </div>
         </div>
