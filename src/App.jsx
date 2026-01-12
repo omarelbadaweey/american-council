@@ -21,17 +21,17 @@ function App() {
     <>
     <Toaster/>
       <div className="">
-        {/* <Header />  */}
+        <Header /> 
         <ScrollToTop />
         <AnimatePresence mode="wait">
           {/* Cancel webSite */}
-          <Routes>
+          {/* <Routes>
             <Route path="/" element={<Test />} />
-          </Routes>
+          </Routes> */}
 
             {/* Routes WebSite */}
 
-          {/* <Routes>
+          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/courses" element={<Coures />} />
             <Route path="/courses/:id" element={<CourseDetails />} />
@@ -44,10 +44,10 @@ function App() {
               element={<BookingtPage targetNumber={"201095922032"} />}
             />
             <Route path="/trainingterms" element={<TrainingTerms />} />
-          </Routes> */}
+          </Routes>
         </AnimatePresence>
 
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );
