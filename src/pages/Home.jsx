@@ -134,15 +134,15 @@ function Home() {
         <div className=" text-info text-right font-bold text-yellow-400 content-center  space-y-5">
           <p className="text-xl font-bold text-white mb-2"> تحت إشراف</p>
           <h2 className="text-4xl ">
-            الدكتور
+            الدكتوره
             <br />
             <span className="mt-5 block"> أيه محمد الملاح</span>
           </h2>
           <div dir="rtl" className=" text-lg   space-y-1">
-            <li> باحث دكتوراه بالقضايا المجتمعيه </li>
             <li> رئيس مجلس الاداره </li>
             <li> بكالوريوس خدمه اجتماعيه جامعه المنصوره </li>
-            <li> ماجستير فى علم الاجتماع كليه الاداب , جامعه المنصوره </li>
+            <li>ماجستير بعلم الاجتماع - جامعه المنصوره ( بالحوكمه الاداريه النسائيه ) </li>
+            <li>باحث دكتوراه بعلم الاجتماع كليه الاداب - جامعه المنصوره بالقضايا المجتمعيه</li>
           </div>
         </div>
       </section>

@@ -98,8 +98,8 @@ const Footer = () => {
               </p>
 
               <div className="flex items-center gap-6">
-                <a className="text-4xl transition-all duration-300 hover:scale-110   text-green-500" href="https://wa.me/201098825176"><FaWhatsapp/></a>
-                <a className="text-3xl transition-all duration-300 hover:scale-110 text-blue-400" href="tel:+201098825176"><FaPhone/></a>
+                <a className="text-4xl transition-all duration-300 hover:scale-110   text-green-500" href="https://wa.me/201010098924"><FaWhatsapp/></a>
+                <a className="text-3xl transition-all duration-300 hover:scale-110 text-blue-400" href="tel:+201010098924"><FaPhone/></a>
               </div>
 
               </div>

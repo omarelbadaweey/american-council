@@ -235,7 +235,7 @@ export default function PaymentMethods() {
           {/* ملاحظة */}
           <div className="text-center mt-10 p-6 bg-[#000524] rounded-2xl border border-yellow-400/30">
             <p className="text-yellow-400 text-lg">
-              💡 بعد إتمام الدفع، يرجى إرسال إشعار الدفع على الواتساب: 01098825176
+              💡 بعد إتمام الدفع، يرجى إرسال إشعار الدفع على الواتساب: <a href="https://wa.me/201010098924" className="hover:underline">01010098924</a>
             </p>
           </div>
         </div>
