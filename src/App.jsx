@@ -41,7 +41,7 @@ function App() {
             <Route path="/search" element={<SearchPage />} />
             <Route
               path="/booking"
-              element={<BookingtPage targetNumber={"201095922032"} />}
+              element={<BookingtPage targetNumber={"201010098924"} />}
             />
             <Route path="/trainingterms" element={<TrainingTerms />} />
           </Routes>
