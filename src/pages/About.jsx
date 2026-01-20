@@ -1,17 +1,13 @@
 import React from "react";
 import Transition from "../components/Transition";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 import Back from "../components/Back";
 const AboutUs = () => {
   return (
     <Transition>
-      {/* <Helmet>
-        <title>About</title>
-        <meta name="description" content="About" />
-        <meta name="keywords" content="About" />
-      </Helmet> */}
 
-      <Helmet>
+
+      {/* <Helmet>
         <title>عن American Council - رؤيتنا ورسالتنا</title>
         <meta
           name="description"
@@ -21,7 +17,7 @@ const AboutUs = () => {
           name="keywords"
           content="عن American Council, رؤية, رسالة, أهداف, جامعة المنصورة, تعليم"
         />
-      </Helmet>
+      </Helmet> */}
 
       <div
         dir="rtl"

@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import Transition from "../components/Transition";
 import { Link } from "react-router-dom";
 import { FaInfoCircle } from "react-icons/fa";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 
 function BookingtPage({ targetNumber }) {
   const {
@@ -31,7 +31,7 @@ function BookingtPage({ targetNumber }) {
 
   return (
     <Transition>
-      <Helmet>
+      {/* <Helmet>
         <title>حجز الكورس - American Council</title>
         <meta
           name="description"
@@ -46,7 +46,7 @@ function BookingtPage({ targetNumber }) {
           property="og:description"
           content="اكمل عملية التسجيل وابدأ رحلة التعلم مع أفضل المدربين"
         />
-      </Helmet>
+      </Helmet> */}
   
       <div
         dir="auto"

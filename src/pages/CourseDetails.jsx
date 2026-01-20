@@ -5,7 +5,7 @@ import Transition from "../components/Transition";
 import { useContext } from "react";
 import { CartContext } from "../components/context/CartContext";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 import toast from "react-hot-toast";
 // import ShowAlert from "../components/ShowAlert";
 
@@ -52,17 +52,13 @@ const CourseDetails = () => {
 
   return (
     <Transition>
-        {/* <Helmet>
-        <title>Course Details</title>
-        <meta name="description" content="Course Details" />
-        <meta name="keywords" content="Course Details" />
-      </Helmet> */}
 
-          <Helmet>
+
+          {/* <Helmet>
   <title>اسم الكورس - American Council</title>
   <meta name="description" content="تفاصيل كورس [اسم الكورس] في American Council - محتوى, مدة, سعر, ومعلومات التسجيل" />
   <meta name="keywords" content="كورس [اسم الكورس], تفاصيل, محتوى, سعر, American Council" />
-</Helmet>
+</Helmet> */}
 
       {/* <ShowAlert showAlert={showAlert} setShowAlert={setShowAlert} course={course}/> */}
       <div className=" py-8 bg-gray-300">

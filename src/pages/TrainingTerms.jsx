@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Transition from '../components/Transition';
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
 
 const TrainingTerms = () => {
   // const terms = [
@@ -205,13 +205,13 @@ const terms = [
 
 
 
-      <Helmet>
+      {/* <Helmet>
   <title>الشروط والأحكام - American Council جامعة المنصورة</title>
   <meta name="description" content="شروط وأحكام استخدام American Council - سياسة الخصوصية, شروط التسجيل في الكورسات, سياسة الإلغاء والاسترجاع, حقوق ومسؤوليات الطلاب" />
   <meta name="keywords" content="شروط وأحكام, سياسة الخصوصية, American Council, شروط التسجيل, سياسة الإلغاء, جامعة المنصورة" />
   <meta property="og:title" content="الشروط والأحكام - American Council جامعة المنصورة" />
   <meta property="og:description" content="شروط الاستخدام وسياسة الخصوصية لتسجيل الكورسات" />
-</Helmet>
+</Helmet> */}
    
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8 px-4">
       <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl p-8">

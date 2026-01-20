@@ -3,7 +3,7 @@ import CourseCard from "../components/CourseCard";
 import coursesData from "../data.json";
 import Hero from "../components/Hero";
 import Transition from "../components/Transition";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 import Back from "../components/Back";
 
 const Coures = () => {
@@ -11,7 +11,7 @@ const Coures = () => {
 
   return (
     <Transition>
-      <Helmet>
+      {/* <Helmet>
         <title>كورسات American Council - جميع الكورسات المتاحة</title>
         <meta
           name="description"
@@ -21,7 +21,7 @@ const Coures = () => {
           name="keywords"
           content="كورسات هندسة, كورسات برمجة, كورسات لغات, تدريب, تطوير مهارات, American Council courses"
         />
-      </Helmet>
+      </Helmet> */}
 
       <Back />
       <div className="min-h-screen">

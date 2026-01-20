@@ -14,9 +14,8 @@ import BookingtPage from "./pages/BookingtPage";
 import Home from "./pages/Home";
 import TrainingTerms from "./pages/TrainingTerms";
 import { Toaster } from "react-hot-toast";
-import Test from "./pages/Test";
+// import Test from "./pages/Test";
 import AmericanCode from "./pages/AmercanCode";
-
 
 
 function App() {

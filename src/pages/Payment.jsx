@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import Transition from "../components/Transition";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 import Back from "../components/Back";
 
 export default function PaymentMethods() {
@@ -97,13 +97,14 @@ export default function PaymentMethods() {
 
   return (
     <Transition>
-      <Helmet>
+
+      {/* <Helmet>
         <title>طرق الدفع - American Council جامعة المنصورة</title>
         <meta name="description" content="طرق الدفع المتاحة في American Council - دفع نقدي, بطاقات ائتمان, تحويل بنكي, فوري. دفع آمن وسريع لكورسات الهندسة والبرمجة" />
         <meta name="keywords" content="طرق الدفع, دفع الكورسات, American Council, بطاقات ائتمان, تحويل بنكي, دفع نقدي, فوري, جامعة المنصورة" />
         <meta property="og:title" content="طرق الدفع - American Council جامعة المنصورة" />
         <meta property="og:description" content="دفع آمن وسريع لكورسات الهندسة والبرمجة بطرق متعددة" />
-      </Helmet>
+      </Helmet> */}
    
       <section className="bg-gray-300 text-white pb-10 ">
         <Back/>

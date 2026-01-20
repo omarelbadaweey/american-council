@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../components/Hero";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 import AboutQuality from "../components/AboutQuality";
 import SoftwareCompanySection from "../components/SoftwareCompanySection";
 
@@ -40,7 +40,7 @@ function Home() {
     <section className="bg-gray-100">
 
 
-      <Helmet>
+      {/* <Helmet>
         <title>American Council - مركز الكورسات بجامعة المنصورة</title>
         <meta
           name="description"
@@ -58,7 +58,7 @@ function Home() {
           property="og:description"
           content="كورسات تعليمية متقدمة في الهندسة والبرمجة واللغات"
         />
-      </Helmet>
+      </Helmet> */}
       {/*  */}
       <Hero />
 

@@ -4,14 +4,14 @@ import { CartContext } from "../components/context/CartContext";
 import CourseCard from "../components/CourseCard";
 import { useNavigate } from "react-router-dom";
 import Transition from "../components/Transition";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 import Back from "../components/Back";
 function Favorites() {
   const { favItems } = useContext(CartContext);
   const navigate = useNavigate();
   return (
     <Transition>
-      <Helmet>
+      {/* <Helmet>
         <title>قائمة المفضلة - American Council</title>
         <meta
           name="description"
@@ -26,7 +26,8 @@ function Favorites() {
           property="og:description"
           content="احفظ الكورسات المفضلة لديك وعد لها لاحقاً"
         />
-      </Helmet>
+      </Helmet> */}
+
       <Back />
       {favItems.length === 0 ? (
         <div
