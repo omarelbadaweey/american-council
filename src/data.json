@@ -1,0 +1,543 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "برنامج سوق العمل",
+      "description": "برنامج متكامل لإعداد الخريجين لسوق العمل",
+      "duration": "3 إلى 4 شهور",
+      "materialPrice": "200",
+      "price": "1300",
+      "content": [
+        "English (3 levels)",
+        "ICDL",
+        "Digital marketing",
+        "Management skills",
+        "personal skills",
+        "AI"
+      ],
+      "image": "/img/markting.jpg"
+    },
+    {
+      "id": 2,
+      "title": "  برنامج اللغة الإنجليزية (18 level)",
+      "description": "تعلم اللغة الإنجليزية من البداية للإحتراف",
+      "duration": "3 إلى 4 شهور",
+      "materialPrice": "150",
+      "limit": "لكل 3 مستوى",
+      "price": "2500",
+      "content": [
+        "writing",
+        "Reading",
+        "listening",
+        "speaking"
+      ],
+      "image": "/img/English.jpeg"
+    },
+    {
+      "id": 3,
+      "title": "  برنامج اللغة الإنجليزية (12 level)",
+      "description": "تعلم اللغة الإنجليزية من البداية للإحتراف",
+      "duration": "3 إلى 4 شهور",
+      "materialPrice": "150",
+      "limit": "لكل 3 مستوى",
+      "price": "1500",
+      "content": [
+        "writing",
+        "Reading",
+        "listening",
+        "speaking"
+      ],
+      "image": "/img/English.jpeg"
+    },
+    {
+      "id": 4,
+      "title": "  برنامج اللغة الإنجليزية (9 level)",
+      "description": "تعلم اللغة الإنجليزية من البداية للإحتراف",
+      "duration": "3 إلى 4 شهور",
+      "materialPrice": "150",
+      "limit": "لكل 3 مستوى",
+      "price": "1300",
+      "content": [
+        "writing",
+        "Reading",
+        "listening",
+        "speaking"
+      ],
+      "image": "/img/English.jpeg"
+    },
+    {
+      "id": 5,
+      "title": "TOEFL Preparation",
+      "description": "تحضير لامتحان التوفل",
+      "duration": "3 إلى 4 شهور",
+      "materialPrice": "500",
+      "price": "1500",
+      "content": [
+        "writing",
+        "Reading",
+        "listening",
+        "speaking"
+      ],
+      "image": "/img/tofel.jpg"
+    },
+    {
+      "id": 6,
+      "title": "برنامج اللغة الألمانية",
+      "description": "تعلم اللغة الألمانية بجميع مستوياتها",
+      "duration": "3 إلى 4 شهور",
+      "materialPrice": "600",
+      "price": "2400",
+      "content": [
+        "writing",
+        "Reading",
+        "listening",
+        "speaking",
+        "(A1,A2/B1,B2/C1,C2)"
+      ],
+      "image": "/img/germany.jpg"
+    },
+    {
+      "id": 7,
+      "title": "برنامج اللغة الإيطالية",
+      "description": "تعلم اللغة الإيطالية بجميع مستوياتها",
+      "duration": "3 إلى 4 شهور",
+      "materialPrice": "600",
+      "price": "2400",
+      "content": [
+        "writing",
+        "Reading",
+        "listening",
+        "speaking",
+        "(A1,A2/B1,B2/C1,C2)"
+      ],
+      "image": "/img/italiano.jpg"
+    },
+    {
+      "id": 7,
+      "title": "برنامج اللغة الفرنسية",
+      "description": "تعلم اللغة الفرنسية بجميع مستوياتها",
+      "duration": "3 إلى 4 شهور",
+      "materialPrice": "600",
+      "price": "2400",
+      "content": [
+        "writing",
+        "Reading",
+        "listening",
+        "speaking",
+        "(A1,A2/B1,B2/C1,C2)"
+      ],
+      "image": "/img/french.jpg"
+    },
+    {
+      "id": 8,
+      "title": "برنامج اللغة الإسبانية",
+      "description": "تعلم اللغة الإسبانية بجميع مستوياتها",
+      "duration": "3 إلى 4 شهور",
+      "materialPrice": "600",
+      "price": "3000",
+      "content": [
+        "writing",
+        "Reading",
+        "listening",
+        "speaking",
+        "(A1,A2/B1,B2/C1,C2)"
+      ],
+      "image": "/img/spanish.jpg"
+    },
+    {
+      "id": 9,
+      "title": "إعداد محاضر لغات أجنبية",
+      "description": "إعداد محاضرين متخصصين في اللغات الأجنبية",
+      "duration": "3 إلى 4 شهور",
+      "materialPrice": "600",
+      "price": "2000",
+      "content": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Russian",
+        "Chinese"
+      ],
+      "image": "/img/languages.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Front-End Development",
+      "description": "تعلم تطوير الواجهات الأمامية",
+      "duration": "3 إلى 4 شهور",
+      "materialPrice": "300",
+      "price": "1700",
+      "content": [
+        "HTML 5",
+        "CSS",
+        "TailwindCss",
+        "JavaScript",
+        "jQuery",
+        "React"
+      ],
+      "image": "/img/front.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Back-End Development",
+      "description": "تعلم تطوير الواجهات الخلفية",
+      "duration": "3 إلى 4 شهور",
+      "materialPrice": "300",
+      "price": "1700",
+      "content": [
+        "PHP",
+        "MySQL",
+        "Laravel"
+      ],
+      "image": "/img/back.jpg"
+    },
+    {
+      "id": 12,
+      "title": "منحه لطريقك الى الدولارات",
+      "description": "تهدف المنحه لاعداد محترف رقمى شامل يمتلك مهارات التصميم والبرمجه والامن السيبرانى وفق المعايير العالميه ",
+      "duration": "6 شهور",
+      "materialPrice": "300",
+      "limit": "لكل برنامج",
+      "price": "4000",
+      "content": [
+        "Front end",
+        "Back end",
+        "Cyber security",
+        "UI/UX",
+        "Digital marketing",
+        "Ai"
+      ],
+      "image": "/img/dollars.jpg"
+    },
+    {
+      "id": 13,
+      "title": "اعداد مصمم دعايا واعلان ",
+      "description": "برنامج تدريبى لنعليم مهارات التصميم المرئى باستخدام ادوات مثل الفوتوشوب والاليستريتور ز يركز على المبادئ الاساسيه مثل نظريه الالوان والطباعه و ويهدف الى انشاء تصاميم احترافيه للشعارات والحملات الاعلانيه",
+      "duration": "3 إلى 4 شهور",
+      "materialPrice": "200",
+      "price": "2000",
+      "content": [
+        "Adobe Photoshop",
+        "Adobe Illustrator",
+        "Adobe InDesign",
+        "Figma",
+        "Canva"
+      ],
+      "image": "/img/graphic.jpg"
+    },
+    {
+      "id": 14,
+      "title": "التطبيقات التكنولوجيا في التغذية",
+      "description": "تطبيقات تكنولوجيا معالجة الأغذية",
+      "duration": "3 إلى 4 شهور",
+      "materialPrice": "200",
+      "price": "1300",
+      "content": [
+        "تاريخ معالجة الأغذية",
+        "تكنولوجيا معالجة الأغذية",
+        "تأثير التقنيات على الصحة"
+      ],
+      "image": "/img/healthy.jpg"
+    },
+    {
+      "id": 15,
+      "title": "إعداد معلم رقمي",
+      "description": "إعداد معلمين رقميين محترفين",
+      "duration": "1 إلى 2 شهور",
+      "materialPrice": "200",
+      "price": "1300",
+      "content": [
+        "استخدام الكاء الاصطناعى ف طرق التدريس "
+      ],
+      "image": "/img/teacher.jpg"
+    },
+    {
+      "id": 16,
+      "title": "التحكيم في عقود الاستثمار الالكترونيه",
+      "description": "تخصص في التحكيم في عقود الاستثمار",
+      "duration": "1 إلى 2 شهور",
+      "materialPrice": "200",
+      "price": "1300",
+      "content": [
+        "تعريف المشاركين بعقود الاستثمار الاكترونيه وانواعها مع شرح اليه العمل والاجراءات الاساسيه "
+      ],
+      "image": "/img/equipe.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Digital Marketing",
+      "description": " تعلم التسويق الرقمي والإلكتروني عبر منصات التواصل الاجتماعى ",
+      "duration": "شهر ",
+      "materialPrice": "300",
+      "price": "800",
+      "content": [
+        "الاستراتيجيه(التخطيط)",
+        "المحتوى(الصناعه)",
+        "الظهور (seo)",
+        "الاعلانات (التمويل)",
+        "التفاعل(التواصل)",
+        "التحليل(الارقام)"
+      ],
+      "image": "/img/digital-marketing.jpg"
+    },
+    {
+      "id": 18,
+      "title": "اعداد صحفى الكترونى",
+      "description": "إعداد صحفيين وكتاب إلكترونيين",
+      "duration": "1 إلى 2 شهور",
+      "materialPrice": "200",
+      "price": "1300",
+      "content": [
+        "​التحرير الرقمي (Writing)",
+        "​صحافة الموبايل (MoJo)",
+        "​التحقق والرصد (Fact-checking)",
+        "​السيو الصحفي (News SEO)",
+        "​إدارة المنصات (Social Media)",
+        "​الوسائط المتعددة (Multimedia)"
+      ],
+      "image": "/img/Journalist-and-E-writer.jpg"
+    },
+    {
+      "id": 19,
+      "title": "تصميم إنشائي ومعماري المعماري (Architecture)",
+      "description": "برنامج الهندسة الإنشائية والمعمارية",
+      "duration": "3 إلى 4 شهور",
+      "materialPrice": "500",
+      "price": "1500",
+      "content": [
+        "​AutoCAD",
+        "​Revit",
+        "​3ds Max",
+        "​Lumion",
+        "​SketchUp"
+      ],
+      "image": "/img/enginer.jpg"
+    },
+    {
+      "id": 20,
+      "title": "مدير مشاريع هندسية ​الإنشائي (Structural)",
+      "description": "إدارة المشاريع الهندسية",
+      "duration": "3 إلى 4 شهور",
+      "materialPrice": "500",
+      "price": "1500",
+      "content": [
+        "​ETABS",
+        "​SAP2000",
+        "​SAFE",
+        "​Robot Structural",
+        "​STAAD.Pro"
+      ],
+      "image": "/img/managerEnginer.jpg"
+    },
+    {
+      "id": 21,
+      "title": "برنامج التخاطب والتربيه الخاصه",
+      "description": "إعداد أخصائي علاج نطق ولغة",
+      "duration": "2 إلى 3 شهور",
+      "materialPrice": "200",
+      "price": "1300",
+      "content": [
+        "أولًا: المدخل إلى التخاطب تعريف التخاطب  واضطراباته الفرق بين اللغة والكلام والتواصل مراحل تطور اللغة الطبيعية عند الطفل من العلامات التحذيرية لتأخر الكلام ",
+        "ثانيًا: اضطرابات النطق والكلام اضطرابات مخارج الحروف الإبدال – الحذف – التشويه – الإضافة التلعثم (الأسباب – الأنواع – العلاج) اضطرابات الصوت (البحة – الخنف – الشدة الصوتية)",
+        "ثالثًا: اضطرابات اللغة تأخر اللغة الاستقبالية تأخر اللغة التعبيرية ضعف الحصيلة اللغوية اضطرابات بناء الجملة اضطرابات الدلالة والمعنى",
+        "رابعًا: اضطرابات التواصل اضطرابات التواصل الاجتماعي اضطراب طيف التوحد والتواصل ضعف مهارات الحوار والتفاعل الاجتماعي",
+        "خامسًا: التخاطب والفئات الخاصة التخاطب عند الأطفال ذوي الإعاقة العقلية التخاطب عند أطفال متلازمة داون التخاطب عند أطفال التوحد التخاطب عند ضعاف السمع وزارعي القوقعة التخاطب عند ذوي اضطراب فرط الحركة وتشتت الانتباه",
+        "سادسًا: القياس والتشخيص أدوات القياس في التخاطب المقابلة الإكلينيكية اختبارات اللغة والنطق إعداد التقرير التشخيصي تحديد الخطة العلاجية الفردية"
+      ],
+      "image": "/img/speaking.jpg"
+    },
+    {
+      "id": 22,
+      "title": " Motion Graphic ",
+      "description": " مصمم فيديوهات سينيمائيه",
+      "duration": "3 إلى 4 شهور",
+      "materialPrice": "200",
+      "price": "2000",
+      "content": [
+        "المونتاج والإخراج النهائي (Adobe Premiere)",
+        "هندسة الصوت (Adobe Audition)",
+        "التحريك البصري (After Effects)",
+        "رسم الاشكال قبل تحريكها Adobe Illustrator"
+      ],
+      "image": "/img/Analytics.jpg"
+    },
+    {
+      "id": 23,
+      "title": "Data Analysis",
+      "description": "إعداد محلل بيانات",
+      "duration": "3 إلى 4 شهور",
+      "materialPrice": "500",
+      "price": "2000",
+      "content": [
+        "المحور الأوّل: Data Analysis with Excel",
+        "الثاني: Data Analysis with SQL",
+        "المحور الثالث: Data Analysis with Python",
+        "القسم الأخير: Data Analysis with Power BI"
+      ],
+      "image": "/img/accountant.jpg"
+    },
+    {
+      "id": 24,
+      "title": "(منحه القائد المالى الرقمى ) Financial Tech-Lead",
+      "description": "إعداد محاسب إلكتروني متكامل",
+      "duration": "3 إلى 4 شهور",
+      "materialPrice": "500",
+      "price": "2500",
+      "content": [
+        "المحاسبة المالية ",
+        "المحاسبة الإلكترونية",
+        "النمذجه و الاتمتة باستخدام excel accounting انظمه ERP ",
+        " odoo - sap - dynamic ax )",
+        "تحليل البيانات باستخدام Power BI ",
+        "مهارات عرض البيانات باستخدام Dashboard &data story telling",
+        "ادارة المشروعات باستخدام agile methodology"
+      ],
+      "image": "/img/Financial.jpg"
+    },
+    {
+      "id": 25,
+      "title": "Ai automation (1)",
+      "description": " احتراف الـ AI Automation وبناء أنظمة ذكيه مستوي (١)",
+      "duration": "3 إلى 4 شهور",
+      "materialPrice": "500",
+      "price": "1500",
+      "content": [
+        "​المستوى الأول: التأسيس وبناء الأنظمة (The Builder)",
+        "​مفهوم الأتمتة والـ No-Code في عصر الذكاء الاصطناعي.",
+        "​إعداد بيئة العمل على أداة n8n (الربط والتحكم).",
+        "​دمج نماذج الذكاء الاصطناعي (OpenAI, Claude, Gemini) داخل الأنظمة.",
+        "​أتمتة خدمات البريد الإلكتروني وجداول البيانات (Google Sheets).",
+        "​بناء أنظمة الرد الآلي الذكي لمنصات التواصل الاجتماعي.",
+        "​تصميم أول موظف ذكاء اصطناعي متكامل لتنفيذ المهام المتكررة."
+      ],
+      "image": "/img/Automation1.jpg"
+    },
+    {
+      "id": 26,
+      "title": "Ai automation (2)",
+      "description": "احتراف الـ AI Automation وبناء أنظمة ذكيه مستوي (٢)",
+      "duration": "3 إلى 4 شهور",
+      "materialPrice": "500",
+      "price": "1500",
+      "content": [
+        " المستوى الثاني: الاحتراف وبناء الوكالة (The Agency)",
+        "​بناء شات بوت (WhatsApp & Telegram) بذاكرة ذكية وقواعد بيانات.",
+        "​أتمتة رحلة العميل (Lead Generation) من الجذب حتى البيع.",
+        "​ربط الأنظمة المتقدمة عبر الـ API و Webhooks.",
+        "​إنشاء منصة أتمتة متعددة العملاء (Multi-client Dashboard).",
+        "​إدارة المشاريع الضخمة وتسعير خدمات الأتمتة (High-Ticket).",
+        "​استراتيجيات الحصول على أول عميل دولي (Upwork/Fiverr)."
+      ],
+      "image": "/img/Automation2.jpg"
+    },
+    {
+      "id": 27,
+      "title": "ICDL",
+      "description": " تعلم الويندوز وبرامج مايكروسوفت",
+      "duration": "1 إلى 2 شهور",
+      "materialPrice": "300",
+      "price": "700",
+      "content": [
+        "Windows",
+        "Word",
+        "Excel",
+        "Access",
+        "Power point",
+        "Internet",
+        "It"
+      ],
+      "image": "/img/icdl.jpg"
+    },
+    {
+      "id": 28,
+      "title": "Cyper security Level (1)",
+      "description": "دورة الامن السيبراني  ( مستوي اول )",
+      "duration": "3 إلى 4 شهور",
+      "materialPrice": "500",
+      "price": "1500",
+      "content": [
+        "الوحده الاولي  : أساسيات الأمن السيبراني",
+        "1. تعريف الأمن السيبراني",
+        "2. لماذا نتعلم الأمن السيبراني",
+        "3. عناصر الأمن السيبراني",
+        "4. مسارات العمل في الأمن السيبراني",
+        "5. المصطلحات الأساسية في",
+        " الأمن السيبراني",
+        "6. تقييم المخاطر وعلاجها",
+        "7. التشفير وخوارزميات التجزئة",
+        "8. الويب المظلم",
+        "9. خوادم البروكسي",
+        "10. المصادقة متعددة العوامل",
+        "11. تسجيل الدخول الأحادي",
+        " الوحده التانيه : أدوات الأمان الأساسية",
+        "1. برنامج مكافحة الفيروسات",
+        "2. استجابة الكشف عن النقاط النهائية",
+        "3. نظام كشف التسلل مقابل نظام منع التسلل",
+        "4. جدران الحماية",
+        "5. آلية عمل جدار الحماية",
+        "6. سياسة جدار الحماية",
+        "7. الإعداد الأساسي لجدار الحماية (عملي)",
+        "الوحده التالته : الهجمات السيبرانية",
+        "1. تعريف الهجمات السيبرانية ",
+        "2. فئات المهاجمين",
+        "3. تشريح الهجمات السيبرانية",
+        "4. الهجمات السيبرانية الشائعة",
+        "5. كيفية منع هذه الهجمات",
+        "الوحده الرابعه : دراسة حالة لأكثر الهجمات شيوعًا",
+        "1. دراسة حالة لأكثر الهجمات شيوعًا",
+        "2. نصائح للحفاظ على بياناتك بأمان"
+      ],
+      "image": "/img/Cypersecurity1.jpg"
+    },
+    {
+      "id": 29,
+      "title": "Cyper securityLevel (2)",
+      "description": " دورة الامن السيبراني  ( مستوي ثانى )  ",
+      "duration": "3 إلى 4 شهور",
+      "materialPrice": "500",
+      "price": "1500",
+
+  "content": [
+    "الوحدة الأولى: نظام لينكس",
+    "مقدمة وتوزيعات لينكس",
+    "نظام ملفات لينكس",
+    "أذونات ملفات لينكس",
+    "إدارة بيئة لينكس (عملي)",
+
+    "الوحدة الثانية: أمان الشبكات (عملي)",
+    "عنوان IP الخاص والعام",
+    "ARP والتوجيه",
+    "NAT",
+    "بروتوكولات الشبكة ونموذج OSI",
+    "VPN و IPsec",
+    "تقنية Zero Trust (ZTA)",
+    "تقنية SDN",
+
+    "الوحدة الثالثة: هجمات الشبكة (عملي)",
+    "تسمم ARP",
+    "اكتشاف الشبكة",
+    "أنظمة اقتحام الشبكة (Snort)",
+    "الثغرات الشائعة في SMTP",
+
+    "الوحدة الرابعة: أساسيات الويب",
+    "تاريخ تطبيقات الويب",
+    "HTML و CSS و JavaScript",
+    "خوادم الويب وقواعد البيانات",
+    "واجهة برمجة التطبيقات (API)",
+    "الكوكيز",
+    "WebSocket",
+
+    "الوحدة الخامسة: هجمات الويب (عملي)",
+    "هجوم XSS (البرمجة النصية عبر المواقع)",
+    "هجمات WebSocket",
+    "هجمات CSRF و SSRF",
+    "حقن SQL",
+    "تأمين تطبيقات الويب من الهجمات"
+  ]
+,
+
+      "image": "/img/Cypersecurity2.jpg"
+    }
+  ]
+}
