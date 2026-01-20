@@ -1,24 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Transition from "../components/Transition";
-// import { Helmet } from "react-helmet";
 import Back from "../components/Back";
 const AboutUs = () => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // حماية لمنع أخطاء الـ Hydration في React 19
+  if (!mounted) {
+    return <div className="min-h-screen bg-[#000524]" />;
+  }
   return (
     <Transition>
-
-
-      {/* <Helmet>
-        <title>عن American Council - رؤيتنا ورسالتنا</title>
-        <meta
-          name="description"
-          content="تعرف على American Council بجامعة المنصورة - رؤيتنا في تقديم أفضل البرامج التعليمية وتطوير مهارات الطلاب"
-        />
-        <meta
-          name="keywords"
-          content="عن American Council, رؤية, رسالة, أهداف, جامعة المنصورة, تعليم"
-        />
-      </Helmet> */}
-
       <div
         dir="rtl"
         className=" min-h-screen bg-gradient-to-br from-gray-200 to-blue-100"
@@ -86,7 +81,7 @@ const AboutUs = () => {
                         className=" w-full h-full object-cover "
                         alt=""
                       />
-                    </div>{" "}
+                    </div>
                   </div>
                   <div className="absolute -bottom-6 -left-2 md:-left-6 bg-yellow-400 text-[#000524] border-3 outline-2 outline-yellow-400  p-6 rounded-2xl shadow-lg">
                     <div className="text-center">
