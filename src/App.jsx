@@ -16,6 +16,7 @@ import TrainingTerms from "./pages/TrainingTerms";
 import { Toaster } from "react-hot-toast";
 // import Test from "./pages/Test";
 import AmericanCode from "./pages/AmercanCode";
+import Alert from "./components/Alert";
 
 
 function App() {
@@ -25,8 +26,12 @@ function App() {
     <Toaster/>
       <div className="">
         {location.pathname !=="/american-code" && (
-        <Header /> 
-        )}
+          <>
+          <Header /> 
+          <Alert/>
+          </>
+      )}
+      
         <ScrollToTop />
         <AnimatePresence mode="wait">
           <Routes>

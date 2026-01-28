@@ -25,7 +25,7 @@ const Footer = () => {
         <button
           onClick={backtop}
           id="backTop"
-          className="flex justify-center text-2xl items-center animate-bounce fixed bottom-6 right-6 bg-[#000524] text-yellow-400 w-[50px] h-[50px] rounded-full shadow-lg border-3 border-yellow-400 outline-4 outline-[#000524] transition-opacity  z-50 cursor-pointer"
+          className="flex justify-center text-2xl items-center animate-bounce fixed bottom-6 right-6 bg-[#000524] text-yellow-400 w-12.5 h-12.5 rounded-full shadow-lg border-3 border-yellow-400 outline-4 outline-[#000524] transition-opacity  z-20 cursor-pointer"
         >
           <FaArrowUp />
         </button>
