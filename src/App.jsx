@@ -16,7 +16,7 @@ import TrainingTerms from "./pages/TrainingTerms";
 import { Toaster } from "react-hot-toast";
 // import Test from "./pages/Test";
 import AmericanCode from "./pages/AmercanCode";
-import Alert from "./components/Alert";
+// import Alert from "./components/Alert";
 
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
         {location.pathname !=="/american-code" && (
           <>
           <Header /> 
-          <Alert/>
+          {/* <Alert/> */}
           </>
       )}
       
