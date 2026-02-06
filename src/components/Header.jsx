@@ -60,7 +60,7 @@ const Header = () => {
             )}
           </Link>
           <a
-            href="tel:201095922032"
+            href="tel:+201010098924"
             title="اتصل بنا "
             className="text-2xl hidden md:block bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition-colors duration-300 font-medium"
           >
@@ -135,7 +135,7 @@ const Header = () => {
                 </NavLink>
               ))}
               <a
-                href="tel:01008790584"
+                href="tel:+201010098924"
                 className="flex justify-center text-2xl bg-[#000524] text-yellow-400 px-6 py-3 rounded-lg  transition-colors duration-300 font-medium mt-2"
               >
                 <FaPhone />
