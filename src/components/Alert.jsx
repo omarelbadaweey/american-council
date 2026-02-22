@@ -15,7 +15,7 @@ const Alert = () => {
     <section className="relative flex flex-col items-center text-center">
       
       {showAlert && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-in fade-in duration-300">
+        <div className="fixed inset-0 z-100 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-in fade-in duration-300">
           <div className="relative w-full max-w-lg bg-[#000524] border-2 border-[#ffcc00] rounded-2xl p-8 shadow-[0_0_50px_rgba(255,204,0,0.2)] transform animate-in zoom-in-95 duration-300">
             
             <button 
@@ -41,7 +41,7 @@ const Alert = () => {
                   onClick={() => { setShowAlert(false); }}
                   className="cursor-pointer flex-1 bg-[#ffcc00] text-[#000814] font-bold py-3 rounded-lg hover:bg-white transition-all active:scale-95"
                 >
-                  <a href="https://api.whatsapp.com/send/?phone=201008790584&text&type=phone_number&app_absent=0"> احصل على استشارة</a>
+                  <a href="https://api.whatsapp.com/send/?phone=201098825176&text&type=phone_number&app_absent=0"> احصل على استشارة</a>
                 </button>
                 <button
                   onClick={() => { setShowAlert(false), navigate("/american-code");} }

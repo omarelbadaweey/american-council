@@ -17,26 +17,21 @@ function ContactCode() {
           لا تتردد في استشارتنا، فريقنا التقني جاهز لمساعدتك في التخطيط والبناء.
         </p>
         <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-          {/* <a
-            href="mailto:info@american-council.com"
-            className="flex items-center justify-center gap-4 p-6 bg-white/5 border border-white/10 rounded-3xl hover:border-[#f7b500] transition-all group"
-          >
-            <Mail className="group-hover:text-[#f7b500]" />
-            <span className="font-bold">info@american-council.com</span>
-          </a> */}
+
           <a
-            href="tel:+12345678"
+            href="https://api.whatsapp.com/send/?phone=201098825176&text&type=phone_number&app_absent=0"
             className="flex items-center justify-center gap-4 p-6 bg-white/5 border border-white/10 rounded-3xl hover:border-green-500 transition-all group"
           >
             <FaWhatsapp className="group-hover:text-green-500 text-3xl"  />
-            <a href="https://api.whatsapp.com/send/?phone=201008790584&text&type=phone_number&app_absent=0" className="font-bold">واتساب</a>
+            <span className="font-bold">واتساب</span>
           </a>
+
           <a
-            href="tel:+12345678"
+            href="tel:201098825176"
             className="flex items-center justify-center gap-4 p-6 bg-white/5 border border-white/10 rounded-3xl hover:border-[#00d2ff] transition-all group"
           >
             <Phone className="group-hover:text-[#00d2ff]" />
-            <a href="tel:201008790584" className="font-bold">اتصل بنا الآن</a>
+            <span className="font-bold">اتصل بنا الآن</span>
           </a>
         </div>
       </div>
