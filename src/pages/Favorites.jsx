@@ -20,7 +20,6 @@ function Favorites() {
             <div className="w-16 h-16 bg-white rounded-full shadow-md"></div>
           </div>
 
-          {/* النص */}
           <h2 className="text-2xl font-semibold text-gray-800 mb-8">
             قائمة المفضلة فارغة
           </h2>
