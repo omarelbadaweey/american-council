@@ -1,7 +1,5 @@
-
 import React, { useState } from "react";
 import Transition from "../components/Transition";
-// import { Helmet } from "react-helmet";
 import Back from "../components/Back";
 
 export default function PaymentMethods() {
@@ -29,21 +27,6 @@ export default function PaymentMethods() {
       type: "vodafone",
       data: paymentData.vodafoneCash,
     },
-    // {
-    //   id: 2,
-    //   name: "PayPal",
-    //   icon: (
-    //     <svg viewBox="0 0 24 24" className="text-blue-400 text-4xl">
-    //       <path
-    //         fill="currentColor"
-    //         d="M7.5 14.25c0 .83.67 1.5 1.5 1.5h6c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5H9c-.83 0-1.5.67-1.5 1.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-    //       />
-    //     </svg>
-    //   ),
-    //   description: "الدفع عبر حساب PayPal",
-    //   type: "paypal",
-    //   data: paymentData.paypal,
-    // },
     {
       id: 2,
       name: "InstaPay",
@@ -64,13 +47,13 @@ export default function PaymentMethods() {
   const [copy, setCopy] = useState(false);
   
   const copyToClipboard = (text) => {
-    // حاول مع الطريقة الحديثة أولاً
+
     if (navigator.clipboard && window.isSecureContext) {
       navigator.clipboard.writeText(text).then(() => {
         setCopy(true);
         setTimeout(() => setCopy(false), 2000);
       }).catch(() => {
-        // إذا فشلت، استخدم الطريقة القديمة
+
         fallbackCopy(text);
       });
     } else {
@@ -97,15 +80,7 @@ export default function PaymentMethods() {
 
   return (
     <Transition>
-
-      {/* <Helmet>
-        <title>طرق الدفع - American Council جامعة المنصورة</title>
-        <meta name="description" content="طرق الدفع المتاحة في American Council - دفع نقدي, بطاقات ائتمان, تحويل بنكي, فوري. دفع آمن وسريع لكورسات الهندسة والبرمجة" />
-        <meta name="keywords" content="طرق الدفع, دفع الكورسات, American Council, بطاقات ائتمان, تحويل بنكي, دفع نقدي, فوري, جامعة المنصورة" />
-        <meta property="og:title" content="طرق الدفع - American Council جامعة المنصورة" />
-        <meta property="og:description" content="دفع آمن وسريع لكورسات الهندسة والبرمجة بطرق متعددة" />
-      </Helmet> */}
-   
+      {/*  */}
       <section className="bg-gray-300 text-white pb-10 ">
         <Back/>
         {copy && (
@@ -122,16 +97,15 @@ export default function PaymentMethods() {
           </p>
         </div>
 
-
         <div className="max-w-6xl mx-auto px-5">
-          {/* الكروت */}
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {methods.map((method) => (
               <div
                 key={method.id}
-                className="group bg-gradient-to-br from-[#020b3a] to-[#0f1a4a] border border-yellow-400/30 rounded-3xl p-8 shadow-2xl hover:shadow-yellow-400/20 hover:border-yellow-400 transition-all duration-500 hover:scale-[1.03]"
+                className="group bg-linear-to-br from-[#020b3a] to-[#0f1a4a] border border-yellow-400/30 rounded-3xl p-8 shadow-2xl hover:shadow-yellow-400/20 hover:border-yellow-400 transition-all duration-500 hover:scale-[1.03]"
               >
-                {/* الهيدر */}
+
                 <div className="flex items-center gap-4 mb-6">
                   <div className="p-3 bg-yellow-400/10 rounded-2xl">
                     {method.icon}
@@ -144,7 +118,6 @@ export default function PaymentMethods() {
                   </div>
                 </div>
 
-                {/* بيانات الدفع */}
                 <div className="space-y-4">
                   {method.type === "vodafone" && (
                     <>
@@ -190,7 +163,6 @@ export default function PaymentMethods() {
 
                   {method.type === "instapay" && (
                     <>
-                      {/* الإيميل والاسم */}
                       <div className="space-y-3 mb-6">
                         <div className="bg-black/30 rounded-2xl p-4 border border-yellow-400/20">
                           <div className="flex justify-between items-center mb-2">
@@ -213,7 +185,6 @@ export default function PaymentMethods() {
                         </div>
                       </div>
 
-                      {/* الباركود */}
                       <div className="text-center">
                         <div className="bg-white p-3 w-50 h-50 rounded-2xl inline-block border-2 border-yellow-400">
                           <img
@@ -233,7 +204,6 @@ export default function PaymentMethods() {
             ))}
           </div>
 
-          {/* ملاحظة */}
           <div className="text-center mt-10 p-6 bg-[#000524] rounded-2xl border border-yellow-400/30">
             <p className="text-yellow-400 text-lg">
               💡 بعد إتمام الدفع، يرجى إرسال إشعار الدفع على الواتساب: <a href="https://wa.me/201010098924" className="hover:underline">01010098924</a>

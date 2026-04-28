@@ -1,13 +1,10 @@
-// import React, { useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import coursesData from "../data.json";
 import Transition from "../components/Transition";
 import { useContext } from "react";
 import { CartContext } from "../components/context/CartContext";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
-// import { Helmet } from "react-helmet";
 import toast from "react-hot-toast";
-// import ShowAlert from "../components/ShowAlert";
 
 const CourseDetails = () => {
   const { id } = useParams();
@@ -20,7 +17,6 @@ const CourseDetails = () => {
 
   const isInFav = favItems.some((c) => c.id === course.id);
 
-  //
   const handelAdd = () => {
     toast.dismiss()
     if (isInFav) {
@@ -53,19 +49,11 @@ const CourseDetails = () => {
   return (
     <Transition>
 
-
-          {/* <Helmet>
-  <title>اسم الكورس - American Council</title>
-  <meta name="description" content="تفاصيل كورس [اسم الكورس] في American Council - محتوى, مدة, سعر, ومعلومات التسجيل" />
-  <meta name="keywords" content="كورس [اسم الكورس], تفاصيل, محتوى, سعر, American Council" />
-</Helmet> */}
-
-      {/* <ShowAlert showAlert={showAlert} setShowAlert={setShowAlert} course={course}/> */}
       <div className=" py-8 bg-gray-300">
         <div className="container mx-auto px-4 ">
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden border-4 border-yellow-400 outline-3 outline-[#000524]">
             <div className="md:flex ">
-              <div className="md:flex-1 h-[500px]">
+              <div className="md:flex-1 h-125">
                 <img
                   src={course.image}
                   alt={course.title}

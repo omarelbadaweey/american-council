@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Coures from "./pages/Coures";
 import CourseDetails from "./pages/CourseDetails";
@@ -14,24 +14,13 @@ import BookingtPage from "./pages/BookingtPage";
 import Home from "./pages/Home";
 import TrainingTerms from "./pages/TrainingTerms";
 import { Toaster } from "react-hot-toast";
-// import Test from "./pages/Test";
-import AmericanCode from "./pages/AmercanCode";
-import Alert from "./components/Alert";
-
 
 function App() {
-  const location = useLocation()
   return (
     <>
-    <Toaster/>
+      <Toaster />
       <div className="">
-        {location.pathname !=="/american-code" && (
-          <>
-          <Header /> 
-          <Alert/>
-          </>
-      )}
-      
+        <Header />
         <ScrollToTop />
         <AnimatePresence mode="wait">
           <Routes>
@@ -47,13 +36,9 @@ function App() {
               element={<BookingtPage targetNumber={"201013003268"} />}
             />
             <Route path="/trainingterms" element={<TrainingTerms />} />
-            <Route path="/american-code" element={<AmericanCode />} />
           </Routes>
         </AnimatePresence>
-
-        {location.pathname !=="/american-code" && (
-          <Footer />
-        )}
+        <Footer />
       </div>
     </>
   );

@@ -2,7 +2,6 @@ import { useForm } from "react-hook-form";
 import Transition from "../components/Transition";
 import { Link } from "react-router-dom";
 import { FaInfoCircle } from "react-icons/fa";
-// import { Helmet } from "react-helmet";
 
 function BookingtPage({ targetNumber }) {
   const {
@@ -12,7 +11,6 @@ function BookingtPage({ targetNumber }) {
     formState: { errors },
   } = useForm();
 
-  // عند الإرسال
   const onSubmit = (data) => {
     const text = `
 👤 الاسم: ${data.name}
@@ -31,33 +29,17 @@ function BookingtPage({ targetNumber }) {
 
   return (
     <Transition>
-      {/* <Helmet>
-        <title>حجز الكورس - American Council</title>
-        <meta
-          name="description"
-          content="احجز كورسك الآن في American Council - اكمل عملية التسجيل, اختر طريقة الدفع, تأكيد الحجز. ابدأ رحلة التعلم مع أفضل المدربين"
-        />
-        <meta
-          name="keywords"
-          content="حجز كورس, تسجيل كورس, American Council, دفع الكورس, تأكيد الحجز, تسجيل الدورة"
-        />
-        <meta property="og:title" content="حجز الكورس - American Council" />
-        <meta
-          property="og:description"
-          content="اكمل عملية التسجيل وابدأ رحلة التعلم مع أفضل المدربين"
-        />
-      </Helmet> */}
   
       <div
         dir="auto"
-        className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-[#000524] px-4 py-8"
+        className="min-h-screen flex items-center justify-center bg-linear-to-br from-gray-900 to-[#000524] px-4 py-8"
       >
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="w-full max-w-4xl bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl border-2 border-yellow-400 overflow-hidden"
         >
           {/* الهيدر */}
-          <div className="bg-gradient-to-r from-[#000524] to-gray-900 p-8 text-center border-b border-yellow-400">
+          <div className="bg-linear-to-r from-[#000524] to-gray-900 p-8 text-center border-b border-yellow-400">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
               نموذج التسجيل في الدورات
             </h2>
@@ -78,9 +60,9 @@ function BookingtPage({ targetNumber }) {
           </div>
 
           <div className="p-6 md:p-8">
-            {/* الصف الأول - للشاشات الكبيرة يكون 2 أعمدة */}
+
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-              {/* الاسم */}
+
               <div className="space-y-2">
                 <label className="block text-sm font-semibold text-gray-700">
                   الاسم الكامل *
@@ -104,7 +86,6 @@ function BookingtPage({ targetNumber }) {
                 )}
               </div>
 
-              {/* رقم الهاتف */}
               <div className="space-y-2">
                 <label className="block text-sm font-semibold text-gray-700">
                   رقم الهاتف *
@@ -130,9 +111,8 @@ function BookingtPage({ targetNumber }) {
               </div>
             </div>
 
-            {/* الصف الثاني - للشاشات الكبيرة يكون 2 أعمدة */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-              {/* البريد الإلكتروني */}
+
               <div className="space-y-2">
                 <label className="block text-sm font-semibold text-gray-700">
                   البريد الإلكتروني *
@@ -156,7 +136,6 @@ function BookingtPage({ targetNumber }) {
                 )}
               </div>
 
-              {/* العنوان */}
               <div className="space-y-2">
                 <label className="block text-sm font-semibold text-gray-700">
                   العنوان *
@@ -178,9 +157,8 @@ function BookingtPage({ targetNumber }) {
               </div>
             </div>
 
-            {/* الصف الرابع - للشاشات الكبيرة يكون 2 أعمدة */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-              {/* الرقم القومي */}
+
               <div className="space-y-2">
                 <label className="block text-sm font-semibold text-gray-700">
                   الرقم القومي *
@@ -204,7 +182,6 @@ function BookingtPage({ targetNumber }) {
                 )}
               </div>
 
-              {/* حقل اختياري أو معلومات إضافية */}
               <div className="space-y-2">
                 <label className="block text-sm font-semibold text-gray-700">
                   اسم الكورس أو الدورة *
@@ -226,11 +203,10 @@ function BookingtPage({ targetNumber }) {
               </div>
             </div>
 
-            {/* الأزرار */}
             <div className="flex flex-col sm:flex-row gap-4 items-center justify-between pt-6 border-t border-gray-200">
               <button
                 type="submit"
-                className="cursor-pointer w-full sm:w-auto bg-gradient-to-r from-yellow-400 to-yellow-500 text-[#000524] font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
+                className="cursor-pointer w-full sm:w-auto bg-linear-to-r from-yellow-400 to-yellow-500 text-[#000524] font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
               >
                 <span>📱</span>
                 أرسل على واتساب

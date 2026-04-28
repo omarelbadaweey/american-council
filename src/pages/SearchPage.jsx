@@ -3,12 +3,11 @@ import { useLocation, Link } from "react-router-dom";
 import CoursesData from "../data.json";
 import CourseCard from "../components/CourseCard";
 import Transition from "../components/Transition";
-// import { Helmet } from "react-helmet";
 import Back from "../components/Back";
 
 function SearchPage() {
   const location = useLocation();
-  // استخدم courses بدلاً من productsData
+
   const courses = CoursesData.courses;
   const [searchResults, setSearchResults] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -56,27 +55,7 @@ function SearchPage() {
   return (
     <Transition>
       <Back/>
-
-      {/* <Helmet>
-        <title>البحث عن الكورسات - American Council</title>
-        <meta
-          name="description"
-          content="ابحث عن الكورسات المناسبة لك في American Council - كورسات الهندسة, البرمجة, اللغات, التصميم. تصفية النتائج حسب المستوى والسعر"
-        />
-        <meta
-          name="keywords"
-          content="بحث كورسات, American Council, كورسات هندسة, كورسات برمجة, بحث متقدم, تصفية كورسات"
-        />
-        <meta
-          property="og:title"
-          content="البحث عن الكورسات - American Council"
-        />
-        <meta
-          property="og:description"
-          content="ابحث عن الكورسات المناسبة بمختلف التخصصات والمستويات"
-        />
-      </Helmet> */}
-
+    {/*  */}
       <div className="bg-gray-300 pt-5">
         <div className="container mx-auto px-4 py-8 ">
           <div className="mb-4 mx-auto text-center " dir="rtl">

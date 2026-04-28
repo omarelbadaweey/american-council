@@ -1,8 +1,6 @@
 import React from "react";
 import Hero from "../components/Hero";
-// import { Helmet } from "react-helmet";
 import AboutQuality from "../components/AboutQuality";
-import SoftwareCompanySection from "../components/SoftwareCompanySection";
 
 function Home() {
   const products = [
@@ -39,31 +37,7 @@ function Home() {
   return (
     <section className="bg-gray-100">
 
-
-      {/* <Helmet>
-        <title>American Council - مركز الكورسات بجامعة المنصورة</title>
-        <meta
-          name="description"
-          content="American Council بجامعة المنصورة - كورسات تعليمية متقدمة في الهندسة والبرمجة واللغات بأفضل الأسعار وأعلى جودة"
-        />
-        <meta
-          name="keywords"
-          content="كورسات, جامعة المنصورة, American Council, هندسة, برمجة, لغات, تعليم"
-        />
-        <meta
-          property="og:title"
-          content="American Council - مركز الكورسات بجامعة المنصورة"
-        />
-        <meta
-          property="og:description"
-          content="كورسات تعليمية متقدمة في الهندسة والبرمجة واللغات"
-        />
-      </Helmet> */}
-      {/*  */}
       <Hero />
-
-      <SoftwareCompanySection/>
-
       {/*  */}
       <svg
         width="100%"

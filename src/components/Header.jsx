@@ -7,14 +7,12 @@ import SearchBox from "./SearchBox";
 const Header = () => {
   const { favItems } = useContext(CartContext);
 
-  //__open_Menu__//
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  //__data_NavBar__//
   const navItems = [
     { name: "الرئيسية", href: "/" },
     { name: "من نحن", href: "/about" },
@@ -29,7 +27,7 @@ const Header = () => {
     >
       {/* header-1 */}
 
-      <div className="h-[80px] text-yellow-400 flex items-center justify-between px-6  w-[100%] content-center ">
+      <div className="h-20 text-yellow-400 flex items-center justify-between px-6  w-full content-center ">
         <Link
           to={"/"}
           className="flex items-center h-full overflow-hidden "
@@ -37,7 +35,7 @@ const Header = () => {
         >
           <img
             src="/img/amercan.png "
-            className="h-[80px] w-[80px]  object-cover"
+            className="h-20 w-20  object-cover"
             alt="american council logo"
           />
         </Link>
@@ -72,7 +70,7 @@ const Header = () => {
       {/* header-2 */}
 
       <div className=" mx-auto px-4 bg-yellow-400 shadow">
-        <div className="flex justify-center items-center text-[#000524]  h-[50px] overflow-hidden">
+        <div className="flex justify-center items-center text-[#000524]  h-12.5 overflow-hidden">
           <nav
             dir="rtl"
             className="hidden lg:flex h-full items-center space-x-reverse "

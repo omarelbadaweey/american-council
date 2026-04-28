@@ -8,7 +8,6 @@ const AboutUs = () => {
     setMounted(true);
   }, []);
 
-  // حماية لمنع أخطاء الـ Hydration في React 19
   if (!mounted) {
     return <div className="min-h-screen bg-[#000524]" />;
   }
@@ -16,10 +15,10 @@ const AboutUs = () => {
     <Transition>
       <div
         dir="rtl"
-        className=" min-h-screen bg-gradient-to-br from-gray-200 to-blue-100"
+        className=" min-h-screen bg-linear-to-br from-gray-200 to-blue-100"
       >
         <Back/>
-        {/* Hero Section */}
+
         <section dir="ltr" className="relative py-16 bg-[#000524] text-white">
           
           <div className="container mx-auto px-4 text-center">
@@ -34,10 +33,9 @@ const AboutUs = () => {
               </p>
             </div>
           </div>
-          <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-yellow-400 to-orange-400"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-2 bg-linear-to-r from-yellow-400 to-orange-400"></div>
         </section>
 
-        {/* Main About Section */}
         <section className="py-12">
           <div className="container mx-auto px-4">
             <div className="flex flex-col lg:flex-row gap-12 items-center mb-16">
@@ -97,12 +95,11 @@ const AboutUs = () => {
           </div>
         </section>
 
-        {/* Mission & Vision */}
         <section className=" ">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-8">
-              {/* Mission */}
-              <div className="relative border-2 border-[#000524] bg-gradient-to-br from-blue-50 to-white rounded-3xl p-8 shadow-lg ">
+
+              <div className="relative border-2 border-[#000524] bg-linear-to-br from-blue-50 to-white rounded-3xl p-8 shadow-lg ">
                 <div className="absolute -top-4 right-8 bg-[#000524] text-white px-6 py-2 rounded-full font-semibold">
                   الرسالة
                 </div>
@@ -117,8 +114,7 @@ const AboutUs = () => {
                 </div>
               </div>
 
-              {/* Vision */}
-              <div className="relative bg-gradient-to-br border-2 border-yellow-400 from-yellow-50 to-white rounded-3xl p-8 shadow-lg ">
+              <div className="relative bg-linear-to-br border-2 border-yellow-400 from-yellow-50 to-white rounded-3xl p-8 shadow-lg ">
                 <div className="absolute -top-4 right-8  bg-yellow-400 text-white px-6 py-2 rounded-full font-semibold">
                   الرؤية
                 </div>
@@ -136,7 +132,6 @@ const AboutUs = () => {
           </div>
         </section>
 
-        {/* Pillars Section */}
         <section className="py-12 ">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
@@ -151,9 +146,9 @@ const AboutUs = () => {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Pillar 1 */}
+
               <div className="group text-center p-8 rounded-3xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border-2 border-[#000524]">
-                <div className="w-24 h-24 bg-gradient-to-br from-[#000524] to-blue-400 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-24 h-24 bg-linear-to-br from-[#000524] to-blue-400 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <span className="text-blue-900 text-3xl">🏛️</span>
                 </div>
                 <h3 className="text-2xl font-bold text-[#000524] mb-4">
@@ -166,9 +161,8 @@ const AboutUs = () => {
                 </p>
               </div>
 
-              {/* Pillar 2 */}
               <div className="group text-center p-8 rounded-3xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border-2 border-[#224a58]">
-                <div className="w-24 h-24 bg-gradient-to-br from-[#000524] to-green-300 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-24 h-24 bg-linear-to-br from-[#000524] to-green-300 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <span className=" text-3xl">📊</span>
                 </div>
                 <h3 className="text-2xl font-bold text-[#000524] mb-4">
@@ -181,9 +175,8 @@ const AboutUs = () => {
                 </p>
               </div>
 
-              {/* Pillar 3 */}
               <div className="group text-center p-8 rounded-3xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border-2 border-yellow-400">
-                <div className="w-24 h-24 bg-gradient-to-br from-[#000524] to-yellow-300 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-24 h-24 bg-linear-to-br from-[#000524] to-yellow-300 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <span className="text-purple-900 text-3xl">🚀</span>
                 </div>
                 <h3 className="text-2xl font-bold text-[#000524] mb-4">
@@ -199,7 +192,6 @@ const AboutUs = () => {
           </div>
         </section>
 
-        {/* Services Overview */}
         <section className="py-20 bg-[#000524] text-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
@@ -255,7 +247,6 @@ const AboutUs = () => {
           </div>
         </section>
 
-        {/* Partners Section */}
         <section className="py-20 ">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">

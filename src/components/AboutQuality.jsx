@@ -1,4 +1,3 @@
-
 function AboutQuality() {
   return (
       <section>
@@ -6,7 +5,6 @@ function AboutQuality() {
     <div className="w-full py-20 px-6 md:px-12">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         
-        {/* جودة المحتوى */}
         <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all p-6 text-center">
           <div className="w-12 h-12 mx-auto mb-4 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center text-xl font-bold">
             💎
@@ -19,7 +17,6 @@ function AboutQuality() {
           </p>
         </div>
 
-        {/* تعلم سريع */}
         <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all p-6 text-center">
           <div className="w-12 h-12 mx-auto mb-4 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center text-xl font-bold">
             ⚡
@@ -32,7 +29,7 @@ function AboutQuality() {
           </p>
         </div>
 
-        {/* دعم فني */}
+ 
         <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all p-6 text-center">
           <div className="w-12 h-12 mx-auto mb-4 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center text-xl font-bold">
             💬
@@ -45,7 +42,6 @@ function AboutQuality() {
           </p>
         </div>
 
-        {/* تجربة حديثة */}
         <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all p-6 text-center">
           <div className="w-12 h-12 mx-auto mb-4 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center text-xl font-bold">
             ✨

@@ -27,28 +27,6 @@ export default function CartProvider({children}) {
       setFavItems((prev)=> prev.filter((i) => i.id !== id))
     }
 
-  // cart 
-    // const [cartItems , setCartItems] = useState(() =>{
-    //   const savedItem = localStorage.getItem("cartItems");
-    //   return savedItem ? JSON.parse(savedItem) : [];
-    // })
-
-    // addToCart
-    // const addToCart = (item) => {
-    //     setCartItems((PrevItems) => [...PrevItems , {...item , quantity: 1}])
-    // }
-
-
-    // removeFromCart
-
-    // const removeFromCart = (id) => {
-    //   setCartItems(PrevItems => PrevItems.filter(item => item.id !== id))
-    // }
-    // useEffect(() =>{
-    //   localStorage.setItem("cartItems" , JSON.stringify(cartItems))
-    // } , [cartItems])
-    
-
   return (
     <CartContext.Provider value={{addToFavorite , favItems , removeFromFav}}>
         {children}

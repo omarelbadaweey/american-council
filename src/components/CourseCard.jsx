@@ -21,13 +21,11 @@ const CourseCard = ({ course }) => {
     }
   };
 
-  //
-
   return (
     <section>
       <div
         dir="rtl"
-        className=" min-h-[400px] bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+        className=" min-h-100 bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
       >
         <div className="relative">
           <img

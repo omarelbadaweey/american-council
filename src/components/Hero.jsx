@@ -2,7 +2,6 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
 
-// استيراد أنماط Swiper
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
@@ -84,7 +83,7 @@ function Hero() {
                         alt={category.title}
                         className="w-full h-full  object-cover "
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                      <div className="absolute inset-0 bg-linear-to-t from-black/70 via-transparent to-transparent"></div>
                       <div className="absolute bottom-4 right-4 text-white z-10">
                         <h3 className="text-2xl font-bold mb-1">
                           {category.title}
